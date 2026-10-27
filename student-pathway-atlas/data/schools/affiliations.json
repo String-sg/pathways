@@ -1,0 +1,1082 @@
+{
+  "0701": [],
+  "0702": [],
+  "0706": [],
+  "0802": [],
+  "0803": [],
+  "0804": [],
+  "0805": [],
+  "0806": [],
+  "1020": [],
+  "1038": [],
+  "1043": [],
+  "1045": [],
+  "1071": [],
+  "1072": [],
+  "1073": [],
+  "1077": [],
+  "1102": [],
+  "1107": [],
+  "1114": [],
+  "1121": [],
+  "1129": [],
+  "1132": [],
+  "1143": [],
+  "1145": [],
+  "1150": [],
+  "1151": [],
+  "1158": [],
+  "1160": [],
+  "1161": [],
+  "1166": [],
+  "1172": [],
+  "1177": [],
+  "1189": [],
+  "1195": [],
+  "1197": [],
+  "1199": [],
+  "1201": [],
+  "1203": [],
+  "1205": [],
+  "1207": [],
+  "1208": [],
+  "1209": [],
+  "1211": [],
+  "1212": [],
+  "1217": [],
+  "1218": [],
+  "1219": [],
+  "1220": [],
+  "1221": [],
+  "1222": [],
+  "1223": [],
+  "1227": [],
+  "1228": [],
+  "1229": [],
+  "1230": [],
+  "1232": [],
+  "1235": [],
+  "1236": [],
+  "1238": [],
+  "1239": [],
+  "1240": [],
+  "1241": [],
+  "1243": [],
+  "1244": [],
+  "1245": [],
+  "1246": [],
+  "1247": [],
+  "1248": [],
+  "1249": [],
+  "1250": [],
+  "1251": [],
+  "1252": [],
+  "1253": [],
+  "1254": [],
+  "1255": [],
+  "1256": [],
+  "1257": [],
+  "1258": [],
+  "1259": [],
+  "1260": [],
+  "1261": [],
+  "1262": [],
+  "1263": [],
+  "1264": [],
+  "1265": [],
+  "1266": [],
+  "1267": [],
+  "1268": [],
+  "1269": [],
+  "1270": [],
+  "1271": [],
+  "1272": [],
+  "1273": [],
+  "1274": [],
+  "1610": [],
+  "1621": [],
+  "1640": [],
+  "1645": [],
+  "1650": [],
+  "1656": [],
+  "1657": [],
+  "1658": [],
+  "1724": [],
+  "1725": [],
+  "1727": [],
+  "1729": [],
+  "1730": [],
+  "1731": [],
+  "1734": [],
+  "1736": [],
+  "1737": [],
+  "1738": [],
+  "1740": [],
+  "1741": [],
+  "1742": [],
+  "1743": [],
+  "1744": [],
+  "1745": [],
+  "1746": [],
+  "1747": [],
+  "1748": [],
+  "1749": [],
+  "1750": [],
+  "1751": [],
+  "1752": [],
+  "1753": [],
+  "1755": [],
+  "1756": [],
+  "1757": [],
+  "1758": [],
+  "1759": [],
+  "1760": [],
+  "1761": [],
+  "1762": [],
+  "1763": [],
+  "1764": [],
+  "1765": [],
+  "1766": [],
+  "1767": [],
+  "1769": [],
+  "1770": [],
+  "1771": [],
+  "1772": [],
+  "1773": [],
+  "3001": [],
+  "3002": [],
+  "3003": [],
+  "3004": [],
+  "3005": [],
+  "3006": [],
+  "3007": [],
+  "3008": [],
+  "3009": [],
+  "3010": [],
+  "3012": [],
+  "3013": [],
+  "3014": [
+    {
+      "code": "0706",
+      "level": "JUNIOR COLLEGE",
+      "name": "Victoria Junior College",
+      "slug": "victoria-junior-college"
+    }
+  ],
+  "3015": [],
+  "3019": [],
+  "3020": [],
+  "3021": [],
+  "3026": [],
+  "3027": [],
+  "3029": [],
+  "3030": [],
+  "3031": [],
+  "3037": [],
+  "3040": [],
+  "3041": [],
+  "3043": [],
+  "3044": [],
+  "3045": [],
+  "3046": [],
+  "3047": [],
+  "3048": [],
+  "3050": [],
+  "3051": [],
+  "3053": [],
+  "3055": [],
+  "3056": [],
+  "3058": [],
+  "3061": [],
+  "3063": [],
+  "3065": [],
+  "3066": [],
+  "3067": [],
+  "3068": [],
+  "3069": [],
+  "3070": [],
+  "3071": [],
+  "3072": [],
+  "3073": [],
+  "3074": [],
+  "3075": [],
+  "3076": [],
+  "3077": [],
+  "3101": [],
+  "3103": [],
+  "3201": [],
+  "3202": [],
+  "3203": [],
+  "3204": [],
+  "3207": [],
+  "3211": [],
+  "3214": [],
+  "3215": [],
+  "3222": [],
+  "3223": [],
+  "3224": [],
+  "3225": [],
+  "3226": [],
+  "3228": [],
+  "3232": [],
+  "3235": [],
+  "3238": [],
+  "3239": [],
+  "3240": [],
+  "3304": [],
+  "3307": [],
+  "3402": [],
+  "3503": [],
+  "3507": [],
+  "3508": [],
+  "3509": [],
+  "3512": [],
+  "3604": [],
+  "3605": [],
+  "3606": [],
+  "3607": [],
+  "3608": [],
+  "3609": [],
+  "3611": [],
+  "3612": [],
+  "3613": [],
+  "3614": [],
+  "3615": [],
+  "3616": [],
+  "3617": [],
+  "3618": [],
+  "3619": [],
+  "3620": [],
+  "3621": [],
+  "3622": [],
+  "3623": [],
+  "5001": [
+    {
+      "code": "7001",
+      "level": "JUNIOR COLLEGE",
+      "name": "Anglo-Chinese School (Independent) (Junior College)",
+      "slug": "anglo-chinese-school-independent-junior-college"
+    },
+    {
+      "code": "7001",
+      "level": "SECONDARY",
+      "name": "Anglo-Chinese School (Independent) (Secondary)",
+      "slug": "anglo-chinese-school-independent-secondary"
+    },
+    {
+      "code": "7032",
+      "level": "SECONDARY",
+      "name": "Anglo-Chinese School (Barker Road)",
+      "slug": "anglo-chinese-school-barker-road"
+    }
+  ],
+  "5004": [
+    {
+      "code": "7004",
+      "level": "SECONDARY",
+      "name": "CHIJ Secondary (Toa Payoh)",
+      "slug": "chij-secondary-toa-payoh"
+    }
+  ],
+  "5005": [
+    {
+      "code": "7023",
+      "level": "SECONDARY",
+      "name": "CHIJ St. Theresa's Convent",
+      "slug": "chij-st-theresas-convent"
+    }
+  ],
+  "5007": [
+    {
+      "code": "7019",
+      "level": "SECONDARY",
+      "name": "CHIJ St. Joseph's Convent",
+      "slug": "chij-st-josephs-convent"
+    }
+  ],
+  "5008": [
+    {
+      "code": "7020",
+      "level": "JUNIOR COLLEGE",
+      "name": "St. Joseph's Institution (Junior College)",
+      "slug": "st-josephs-institution-junior-college"
+    },
+    {
+      "code": "7020",
+      "level": "SECONDARY",
+      "name": "St. Joseph's Institution (Secondary)",
+      "slug": "st-josephs-institution-secondary"
+    },
+    {
+      "code": "7022",
+      "level": "SECONDARY",
+      "name": "St. Patrick's School",
+      "slug": "st-patricks-school"
+    }
+  ],
+  "5009": [
+    {
+      "code": "7015",
+      "level": "SECONDARY",
+      "name": "St Andrew's School (Secondary)",
+      "slug": "st-andrews-school-secondary"
+    }
+  ],
+  "5011": [
+    {
+      "code": "7016",
+      "level": "SECONDARY",
+      "name": "St. Anthony's Canossian Secondary School",
+      "slug": "st-anthonys-canossian-secondary-school"
+    }
+  ],
+  "5012": [
+    {
+      "code": "7017",
+      "level": "SECONDARY",
+      "name": "St. Gabriel's Secondary School",
+      "slug": "st-gabriels-secondary-school"
+    }
+  ],
+  "5013": [
+    {
+      "code": "7021",
+      "level": "SECONDARY",
+      "name": "St. Margaret's School (Secondary)",
+      "slug": "st-margarets-school-secondary"
+    }
+  ],
+  "5014": [
+    {
+      "code": "7020",
+      "level": "JUNIOR COLLEGE",
+      "name": "St. Joseph's Institution (Junior College)",
+      "slug": "st-josephs-institution-junior-college"
+    },
+    {
+      "code": "7020",
+      "level": "SECONDARY",
+      "name": "St. Joseph's Institution (Secondary)",
+      "slug": "st-josephs-institution-secondary"
+    },
+    {
+      "code": "7022",
+      "level": "SECONDARY",
+      "name": "St. Patrick's School",
+      "slug": "st-patricks-school"
+    }
+  ],
+  "5015": [
+    {
+      "code": "7020",
+      "level": "JUNIOR COLLEGE",
+      "name": "St. Joseph's Institution (Junior College)",
+      "slug": "st-josephs-institution-junior-college"
+    },
+    {
+      "code": "7020",
+      "level": "SECONDARY",
+      "name": "St. Joseph's Institution (Secondary)",
+      "slug": "st-josephs-institution-secondary"
+    },
+    {
+      "code": "7022",
+      "level": "SECONDARY",
+      "name": "St. Patrick's School",
+      "slug": "st-patricks-school"
+    }
+  ],
+  "5017": [
+    {
+      "code": "7019",
+      "level": "SECONDARY",
+      "name": "CHIJ St. Joseph's Convent",
+      "slug": "chij-st-josephs-convent"
+    }
+  ],
+  "5018": [
+    {
+      "code": "7011",
+      "level": "SECONDARY",
+      "name": "Montfort Secondary School",
+      "slug": "montfort-secondary-school"
+    }
+  ],
+  "5019": [
+    {
+      "code": "7023",
+      "level": "SECONDARY",
+      "name": "CHIJ St. Theresa's Convent",
+      "slug": "chij-st-theresas-convent"
+    }
+  ],
+  "5020": [
+    {
+      "code": "7309",
+      "level": "SECONDARY",
+      "name": "Fairfield Methodist School (Secondary)",
+      "slug": "fairfield-methodist-school-secondary"
+    }
+  ],
+  "5022": [
+    {
+      "code": "7005",
+      "level": "SECONDARY",
+      "name": "Geylang Methodist School (Secondary)",
+      "slug": "geylang-methodist-school-secondary"
+    }
+  ],
+  "5024": [
+    {
+      "code": "7028",
+      "level": "SECONDARY",
+      "name": "Kuo Chuan Presbyterian Secondary School",
+      "slug": "kuo-chuan-presbyterian-secondary-school"
+    }
+  ],
+  "5025": [
+    {
+      "code": "7029",
+      "level": "SECONDARY",
+      "name": "St. Hilda's Secondary School",
+      "slug": "st-hildas-secondary-school"
+    }
+  ],
+  "5026": [
+    {
+      "code": "7014",
+      "level": "SECONDARY",
+      "name": "Singapore Chinese Girls' School",
+      "slug": "singapore-chinese-girls-school"
+    }
+  ],
+  "5027": [
+    {
+      "code": "7030",
+      "level": "SECONDARY",
+      "name": "Methodist Girls' School (Secondary)",
+      "slug": "methodist-girls-school-secondary"
+    }
+  ],
+  "5028": [],
+  "5029": [
+    {
+      "code": "7016",
+      "level": "SECONDARY",
+      "name": "St. Anthony's Canossian Secondary School",
+      "slug": "st-anthonys-canossian-secondary-school"
+    }
+  ],
+  "5168": [],
+  "5183": [
+    {
+      "code": "7307",
+      "level": "SECONDARY",
+      "name": "Manjusri Secondary School",
+      "slug": "manjusri-secondary-school"
+    }
+  ],
+  "5197": [
+    {
+      "code": "7310",
+      "level": "SECONDARY",
+      "name": "Ngee Ann Secondary School",
+      "slug": "ngee-ann-secondary-school"
+    }
+  ],
+  "5214": [],
+  "5240": [],
+  "5258": [
+    {
+      "code": "7114",
+      "level": "SECONDARY",
+      "name": "Nanyang Girls' High School",
+      "slug": "nanyang-girls-high-school"
+    }
+  ],
+  "5259": [
+    {
+      "code": "7020",
+      "level": "JUNIOR COLLEGE",
+      "name": "St. Joseph's Institution (Junior College)",
+      "slug": "st-josephs-institution-junior-college"
+    },
+    {
+      "code": "7020",
+      "level": "SECONDARY",
+      "name": "St. Joseph's Institution (Secondary)",
+      "slug": "st-josephs-institution-secondary"
+    },
+    {
+      "code": "7022",
+      "level": "SECONDARY",
+      "name": "St. Patrick's School",
+      "slug": "st-patricks-school"
+    }
+  ],
+  "5601": [
+    {
+      "code": "7307",
+      "level": "SECONDARY",
+      "name": "Manjusri Secondary School",
+      "slug": "manjusri-secondary-school"
+    }
+  ],
+  "5602": [],
+  "5603": [],
+  "5608": [],
+  "5622": [],
+  "5623": [],
+  "5625": [],
+  "5626": [],
+  "5634": [
+    {
+      "code": "7108",
+      "level": "SECONDARY",
+      "name": "Holy Innocents' High School",
+      "slug": "holy-innocents-high-school"
+    }
+  ],
+  "5635": [
+    {
+      "code": "7026",
+      "level": "SECONDARY",
+      "name": "Paya Lebar Methodist Girls' School (Secondary)",
+      "slug": "paya-lebar-methodist-girls-school-secondary"
+    }
+  ],
+  "5636": [],
+  "5637": [
+    {
+      "code": "7008",
+      "level": "SECONDARY",
+      "name": "CHIJ Katong Convent",
+      "slug": "chij-katong-convent"
+    }
+  ],
+  "5638": [
+    {
+      "code": "7001",
+      "level": "JUNIOR COLLEGE",
+      "name": "Anglo-Chinese School (Independent) (Junior College)",
+      "slug": "anglo-chinese-school-independent-junior-college"
+    },
+    {
+      "code": "7001",
+      "level": "SECONDARY",
+      "name": "Anglo-Chinese School (Independent) (Secondary)",
+      "slug": "anglo-chinese-school-independent-secondary"
+    },
+    {
+      "code": "7032",
+      "level": "SECONDARY",
+      "name": "Anglo-Chinese School (Barker Road)",
+      "slug": "anglo-chinese-school-barker-road"
+    }
+  ],
+  "7001": [
+    {
+      "code": "7001",
+      "level": "JUNIOR COLLEGE",
+      "name": "Anglo-Chinese School (Independent) (Junior College)",
+      "slug": "anglo-chinese-school-independent-junior-college"
+    },
+    {
+      "code": "0803",
+      "level": "JUNIOR COLLEGE",
+      "name": "Anglo-Chinese Junior College",
+      "slug": "anglo-chinese-junior-college"
+    },
+    {
+      "code": "5001",
+      "level": "SECONDARY",
+      "name": "Anglo-Chinese School (Junior)",
+      "slug": "anglo-chinese-school-junior"
+    },
+    {
+      "code": "5638",
+      "level": "PRIMARY",
+      "name": "Anglo-Chinese School (Primary)",
+      "slug": "anglo-chinese-school-primary"
+    }
+  ],
+  "7002": [
+    {
+      "code": "0802",
+      "level": "JUNIOR COLLEGE",
+      "name": "Catholic Junior College",
+      "slug": "catholic-junior-college"
+    }
+  ],
+  "7004": [
+    {
+      "code": "0802",
+      "level": "JUNIOR COLLEGE",
+      "name": "Catholic Junior College",
+      "slug": "catholic-junior-college"
+    },
+    {
+      "code": "5004",
+      "level": "PRIMARY",
+      "name": "CHIJ Primary (Toa Payoh)",
+      "slug": "chij-primary-toa-payoh"
+    }
+  ],
+  "7005": [
+    {
+      "code": "0803",
+      "level": "JUNIOR COLLEGE",
+      "name": "Anglo-Chinese Junior College",
+      "slug": "anglo-chinese-junior-college"
+    },
+    {
+      "code": "5022",
+      "level": "PRIMARY",
+      "name": "Geylang Methodist School (Primary)",
+      "slug": "geylang-methodist-school-primary"
+    }
+  ],
+  "7008": [
+    {
+      "code": "0802",
+      "level": "JUNIOR COLLEGE",
+      "name": "Catholic Junior College",
+      "slug": "catholic-junior-college"
+    },
+    {
+      "code": "5637",
+      "level": "PRIMARY",
+      "name": "CHIJ (Katong) Primary",
+      "slug": "chij-katong-primary"
+    }
+  ],
+  "7011": [
+    {
+      "code": "0802",
+      "level": "JUNIOR COLLEGE",
+      "name": "Catholic Junior College",
+      "slug": "catholic-junior-college"
+    },
+    {
+      "code": "5018",
+      "level": "SECONDARY",
+      "name": "Montfort Junior School",
+      "slug": "montfort-junior-school"
+    }
+  ],
+  "7014": [
+    {
+      "code": "5026",
+      "level": "PRIMARY",
+      "name": "Singapore Chinese Girls' Primary School",
+      "slug": "singapore-chinese-girls-primary-school"
+    }
+  ],
+  "7015": [
+    {
+      "code": "0804",
+      "level": "JUNIOR COLLEGE",
+      "name": "St Andrew's Junior College",
+      "slug": "st-andrews-junior-college"
+    },
+    {
+      "code": "5009",
+      "level": "SECONDARY",
+      "name": "St Andrew's School (Junior)",
+      "slug": "st-andrews-school-junior"
+    }
+  ],
+  "7016": [
+    {
+      "code": "0802",
+      "level": "JUNIOR COLLEGE",
+      "name": "Catholic Junior College",
+      "slug": "catholic-junior-college"
+    },
+    {
+      "code": "5011",
+      "level": "PRIMARY",
+      "name": "St. Anthony's Canossian Primary School",
+      "slug": "st-anthonys-canossian-primary-school"
+    },
+    {
+      "code": "5029",
+      "level": "PRIMARY",
+      "name": "Canossa Catholic Primary School",
+      "slug": "canossa-catholic-primary-school"
+    }
+  ],
+  "7017": [
+    {
+      "code": "0802",
+      "level": "JUNIOR COLLEGE",
+      "name": "Catholic Junior College",
+      "slug": "catholic-junior-college"
+    },
+    {
+      "code": "5012",
+      "level": "PRIMARY",
+      "name": "St. Gabriel's Primary School",
+      "slug": "st-gabriels-primary-school"
+    }
+  ],
+  "7019": [
+    {
+      "code": "0802",
+      "level": "JUNIOR COLLEGE",
+      "name": "Catholic Junior College",
+      "slug": "catholic-junior-college"
+    },
+    {
+      "code": "5007",
+      "level": "SECONDARY",
+      "name": "CHIJ Our Lady of the Nativity",
+      "slug": "chij-our-lady-of-the-nativity"
+    },
+    {
+      "code": "5017",
+      "level": "SECONDARY",
+      "name": "CHIJ Our Lady of Good Counsel",
+      "slug": "chij-our-lady-of-good-counsel"
+    }
+  ],
+  "7020": [
+    {
+      "code": "7020",
+      "level": "JUNIOR COLLEGE",
+      "name": "St. Joseph's Institution (Junior College)",
+      "slug": "st-josephs-institution-junior-college"
+    },
+    {
+      "code": "0802",
+      "level": "JUNIOR COLLEGE",
+      "name": "Catholic Junior College",
+      "slug": "catholic-junior-college"
+    },
+    {
+      "code": "5008",
+      "level": "SECONDARY",
+      "name": "De La Salle School",
+      "slug": "de-la-salle-school"
+    },
+    {
+      "code": "5014",
+      "level": "SECONDARY",
+      "name": "St. Joseph's Institution Junior",
+      "slug": "st-josephs-institution-junior"
+    },
+    {
+      "code": "5015",
+      "level": "SECONDARY",
+      "name": "St. Stephen's School",
+      "slug": "st-stephens-school"
+    },
+    {
+      "code": "5259",
+      "level": "PRIMARY",
+      "name": "St. Anthony's Primary School",
+      "slug": "st-anthonys-primary-school"
+    }
+  ],
+  "7021": [
+    {
+      "code": "0804",
+      "level": "JUNIOR COLLEGE",
+      "name": "St Andrew's Junior College",
+      "slug": "st-andrews-junior-college"
+    },
+    {
+      "code": "5013",
+      "level": "PRIMARY",
+      "name": "St. Margaret's School (Primary)",
+      "slug": "st-margarets-school-primary"
+    }
+  ],
+  "7022": [
+    {
+      "code": "0802",
+      "level": "JUNIOR COLLEGE",
+      "name": "Catholic Junior College",
+      "slug": "catholic-junior-college"
+    },
+    {
+      "code": "5008",
+      "level": "SECONDARY",
+      "name": "De La Salle School",
+      "slug": "de-la-salle-school"
+    },
+    {
+      "code": "5014",
+      "level": "SECONDARY",
+      "name": "St. Joseph's Institution Junior",
+      "slug": "st-josephs-institution-junior"
+    },
+    {
+      "code": "5015",
+      "level": "SECONDARY",
+      "name": "St. Stephen's School",
+      "slug": "st-stephens-school"
+    },
+    {
+      "code": "5259",
+      "level": "PRIMARY",
+      "name": "St. Anthony's Primary School",
+      "slug": "st-anthonys-primary-school"
+    }
+  ],
+  "7023": [
+    {
+      "code": "0802",
+      "level": "JUNIOR COLLEGE",
+      "name": "Catholic Junior College",
+      "slug": "catholic-junior-college"
+    },
+    {
+      "code": "5005",
+      "level": "SECONDARY",
+      "name": "CHIJ (Kellock)",
+      "slug": "chij-kellock"
+    },
+    {
+      "code": "5019",
+      "level": "SECONDARY",
+      "name": "CHIJ Our Lady Queen of Peace",
+      "slug": "chij-our-lady-queen-of-peace"
+    }
+  ],
+  "7025": [
+    {
+      "code": "0804",
+      "level": "JUNIOR COLLEGE",
+      "name": "St Andrew's Junior College",
+      "slug": "st-andrews-junior-college"
+    }
+  ],
+  "7026": [
+    {
+      "code": "0803",
+      "level": "JUNIOR COLLEGE",
+      "name": "Anglo-Chinese Junior College",
+      "slug": "anglo-chinese-junior-college"
+    },
+    {
+      "code": "5635",
+      "level": "PRIMARY",
+      "name": "Paya Lebar Methodist Girls' School (Primary)",
+      "slug": "paya-lebar-methodist-girls-school-primary"
+    }
+  ],
+  "7027": [],
+  "7028": [
+    {
+      "code": "0804",
+      "level": "JUNIOR COLLEGE",
+      "name": "St Andrew's Junior College",
+      "slug": "st-andrews-junior-college"
+    },
+    {
+      "code": "5024",
+      "level": "PRIMARY",
+      "name": "Kuo Chuan Presbyterian Primary School",
+      "slug": "kuo-chuan-presbyterian-primary-school"
+    }
+  ],
+  "7029": [
+    {
+      "code": "0804",
+      "level": "JUNIOR COLLEGE",
+      "name": "St Andrew's Junior College",
+      "slug": "st-andrews-junior-college"
+    },
+    {
+      "code": "5025",
+      "level": "PRIMARY",
+      "name": "St. Hilda's Primary School",
+      "slug": "st-hildas-primary-school"
+    }
+  ],
+  "7030": [
+    {
+      "code": "0803",
+      "level": "JUNIOR COLLEGE",
+      "name": "Anglo-Chinese Junior College",
+      "slug": "anglo-chinese-junior-college"
+    },
+    {
+      "code": "5027",
+      "level": "PRIMARY",
+      "name": "Methodist Girls' School (Primary)",
+      "slug": "methodist-girls-school-primary"
+    }
+  ],
+  "7031": [
+    {
+      "code": "0802",
+      "level": "JUNIOR COLLEGE",
+      "name": "Catholic Junior College",
+      "slug": "catholic-junior-college"
+    }
+  ],
+  "7032": [
+    {
+      "code": "0803",
+      "level": "JUNIOR COLLEGE",
+      "name": "Anglo-Chinese Junior College",
+      "slug": "anglo-chinese-junior-college"
+    },
+    {
+      "code": "5001",
+      "level": "SECONDARY",
+      "name": "Anglo-Chinese School (Junior)",
+      "slug": "anglo-chinese-school-junior"
+    },
+    {
+      "code": "5638",
+      "level": "PRIMARY",
+      "name": "Anglo-Chinese School (Primary)",
+      "slug": "anglo-chinese-school-primary"
+    }
+  ],
+  "7101": [
+    {
+      "code": "0804",
+      "level": "JUNIOR COLLEGE",
+      "name": "St Andrew's Junior College",
+      "slug": "st-andrews-junior-college"
+    }
+  ],
+  "7102": [
+    {
+      "code": "0802",
+      "level": "JUNIOR COLLEGE",
+      "name": "Catholic Junior College",
+      "slug": "catholic-junior-college"
+    },
+    {
+      "code": "7102",
+      "level": "SECONDARY",
+      "name": "Catholic High School (Secondary)",
+      "slug": "catholic-high-school-secondary"
+    }
+  ],
+  "7104": [
+    {
+      "code": "0805",
+      "level": "JUNIOR COLLEGE",
+      "name": "Nanyang Junior College",
+      "slug": "nanyang-junior-college"
+    }
+  ],
+  "7105": [
+    {
+      "code": "0805",
+      "level": "JUNIOR COLLEGE",
+      "name": "Nanyang Junior College",
+      "slug": "nanyang-junior-college"
+    }
+  ],
+  "7108": [
+    {
+      "code": "0802",
+      "level": "JUNIOR COLLEGE",
+      "name": "Catholic Junior College",
+      "slug": "catholic-junior-college"
+    },
+    {
+      "code": "5634",
+      "level": "PRIMARY",
+      "name": "Holy Innocents' Primary School",
+      "slug": "holy-innocents-primary-school"
+    }
+  ],
+  "7111": [
+    {
+      "code": "0802",
+      "level": "JUNIOR COLLEGE",
+      "name": "Catholic Junior College",
+      "slug": "catholic-junior-college"
+    },
+    {
+      "code": "7111",
+      "level": "SECONDARY",
+      "name": "Maris Stella High School (Secondary)",
+      "slug": "maris-stella-high-school-secondary"
+    }
+  ],
+  "7112": [],
+  "7114": [
+    {
+      "code": "5258",
+      "level": "PRIMARY",
+      "name": "Nanyang Primary School",
+      "slug": "nanyang-primary-school"
+    }
+  ],
+  "7118": [
+    {
+      "code": "0802",
+      "level": "JUNIOR COLLEGE",
+      "name": "Catholic Junior College",
+      "slug": "catholic-junior-college"
+    },
+    {
+      "code": "7118",
+      "level": "SECONDARY",
+      "name": "CHIJ St. Nicholas Girls' School (Secondary)",
+      "slug": "chij-st-nicholas-girls-school-secondary"
+    }
+  ],
+  "7301": [],
+  "7307": [
+    {
+      "code": "5183",
+      "level": "SECONDARY",
+      "name": "Mee Toh School",
+      "slug": "mee-toh-school"
+    },
+    {
+      "code": "5601",
+      "level": "SECONDARY",
+      "name": "Maha Bodhi School",
+      "slug": "maha-bodhi-school"
+    }
+  ],
+  "7308": [
+    {
+      "code": "0804",
+      "level": "JUNIOR COLLEGE",
+      "name": "St Andrew's Junior College",
+      "slug": "st-andrews-junior-college"
+    }
+  ],
+  "7309": [
+    {
+      "code": "0803",
+      "level": "JUNIOR COLLEGE",
+      "name": "Anglo-Chinese Junior College",
+      "slug": "anglo-chinese-junior-college"
+    },
+    {
+      "code": "5020",
+      "level": "PRIMARY",
+      "name": "Fairfield Methodist School (Primary)",
+      "slug": "fairfield-methodist-school-primary"
+    }
+  ],
+  "7310": [
+    {
+      "code": "5197",
+      "level": "PRIMARY",
+      "name": "Ngee Ann Primary School",
+      "slug": "ngee-ann-primary-school"
+    }
+  ],
+  "7800": [],
+  "7801": [],
+  "7802": [],
+  "7803": [],
+  "7804": [],
+  "7805": [],
+  "7806": [],
+  "7807": []
+}

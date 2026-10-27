@@ -1,0 +1,78 @@
+/* app_tokens.css - the Student Pathway Atlas's own tokens, added to the SG Schools Atlas contract (tokens_from_atlas.css) so the
+   two Rosetta atlases stay one family.  Same rule: every colour lives in a token file, in light and dark pairs;
+   app.css and app.js hold none (build_app.py checks it).
+   - Series branding (Rosetta): badge gradient #8d6e63 -> #4e342e, version pill #efebe9 / #4e342e.
+   - The gap badge (D8): green fill = 2 or more points to spare, amber = within 1 point either side, an outline =
+     2 or more short, grey text = no range.  Always with its words, never colour alone (design principles B5).
+   - Red is for input errors only (D4): --err.
+   - Key dates (D14, ): three exercise hues (JAE, JIE, DPP), each fixed, colour-blind safe in both themes and clear
+     of the semantic green, amber and red; every other exercise is a grey outline, and every item carries its name. */
+:root{
+  --ground:#FFF6E5; --surface:#FFFFFF; --surface-2:#FFFFFF; --sunk:#ECE7DD;
+  --ink:#151515; --ink-2:#3D3D3D; --ink-3:#5C5C5C;
+  --rule:#E3DCCD; --rule-2:#151515;
+  --accent:#0E5E34; --accent-soft:#D3F3E0; --on-accent:#FFFFFF;
+  --outline:#151515; --bw:2px; --hard:3px 3px 0 var(--outline); --hard-sm:2px 2px 0 var(--outline);   /* cards, tiles, pills, the solid button */
+  --ok-fill:#92E6B4; --ok-num:#151515; --ok-k:#1E3B2B; --ok-ink:#0A3D23;   /* an open tile: mint, its words dark */
+  --bd-fill:#FFD54A; --bd-ink:#3F2F00; --bd-on:#3F2F00;   /* borderline: a yellow fill with dark words; --bd-on is its colour as text on a card */
+  --deco-1:#B8A4FF; --deco-2:#FF8A63;   /* the two flat round shapes near the top of every page */
+  /* each shape's fill and outline, as gradient stops: app.css places them, one look everywhere */
+  --deco-a:var(--deco-1) 0 66px,var(--outline) 66px 68px,transparent 68.5px;
+  --deco-b:var(--deco-2) 0 44px,var(--outline) 44px 46px,transparent 46.5px;
+  --band-line:var(--outline);   /* the route band's bar on Courses */
+  --glass-bar:var(--surface); --blur:none;   /* no glass: the bars are solid, so nothing blurs on an old phone */
+  --sans:"Space Grotesk",system-ui,-apple-system,"Segoe UI","Helvetica Neue",Arial,sans-serif;   /* embedded by build_app.py */
+  --cta:#FF6A3D; --on-cta:#151515;   /* the one solid button on a screen; Bright: coral with dark words (6.6:1) */
+  --fs-agg:34px; --lh-agg:38px;   /* the aggregate tiles' numbers, the largest type in the app */
+  /* four levels on Courses: the route band, the overview grid, a card's institution label, a card's title */
+  --fs-route:19px; --lh-route:24px; --fs-grid:13px; --lh-grid:18px; --fs-label:10.5px; --lh-label:14px; --fw-3:700; --fw-4:800;
+  --ring:var(--rosetta);   /* the outline on the tile whose pop-over is open (the brand hue: clear of the tiles' green and grey) */
+  --badge-a:#8D6E63; --badge-b:#4E342E; --on-badge:#FFFFFF;
+  --pill-bg:#EFEBE9; --pill-ink:#4E342E;
+  --gap-spare:var(--ok-fill); --on-gap-spare:var(--ok-ink);   /* the pills take the tiles' fills */
+  --gap-close-bg:var(--bd-fill); --gap-close-ink:var(--bd-ink); --gap-close-line:var(--outline);
+  --st-cond:#8A6100; --st-cond-soft:var(--warn-soft);
+  --err:#B3261E; --err-soft:#FBEAE9;
+  --fit-bg:#ECE7F4; --fit-ink:#4B3A6B;
+  --ex-jae:#007FAA; --ex-jie:#5A6D00; --ex-dpp:#8B2F52; --ex-n:var(--ink-3);   /* one hue per exercise, CVD all-pairs >= 10 (validate_palette.js --pairs all), clear of the Map's route hues */
+  --map-land:var(--sunk); --map-edge:var(--rule-2);
+  --dot-jc:var(--c1); --dot-mi:var(--c4); --dot-poly:var(--c2); --dot-ite:var(--c3);
+  /* fix 9: one ink fill for what is selected (segments, chips, the tab, the primary button); green is kept for meaning */
+  --sel:var(--ink); --on-sel:var(--ground); --sel-soft:color-mix(in srgb,var(--ink) 9%,var(--surface));
+  --star-soft:color-mix(in srgb,var(--rosetta) 16%,var(--surface));
+  --h-top:56px; --h-tabs:56px; --h-barbtm:76px; --w-input:640px; --w-listpane:minmax(380px,44%); --w-side:15rem; --w-page:1440px;
+}
+@media (prefers-color-scheme: dark){ :root:not([data-theme="light"]){
+  /* Bright, dark: the same bright fills with dark words; outlines turn cream, the offset shadow black */
+  --ground:#141414; --surface:#1F1F1F; --surface-2:#262626; --sunk:#2B2B2B;
+  --ink:#F7F2E8; --ink-2:#D9D2C5; --ink-3:#AFA89B;
+  --rule:#383838; --rule-2:#EDE7DA;
+  --accent:#92E6B4; --accent-soft:#1F3D2C; --on-accent:#0A3D23;
+  --outline:#EDE7DA; --hard:3px 3px 0 #000000; --hard-sm:2px 2px 0 #000000;
+  --bd-on:#FFD54A;
+  --deco-1:#3F3480; --deco-2:#7A3218;
+  --cta:#FF7A50; --on-cta:#151515;
+  --badge-a:#A1887F; --badge-b:#5D4037; --on-badge:#FFFFFF;
+  --pill-bg:#3E2C26; --pill-ink:#E8DCD7;
+  --st-cond:#E0B84A;
+  --err:#F2B8B5; --err-soft:#3A1E1C;
+  --fit-bg:#3A3149; --fit-ink:#DCD0F2;
+  --ex-jae:#139EC6; --ex-jie:#778A2D; --ex-dpp:#A8506F;
+}}
+:root[data-theme="dark"]{
+  /* Bright, dark: the same bright fills with dark words; outlines turn cream, the offset shadow black */
+  --ground:#141414; --surface:#1F1F1F; --surface-2:#262626; --sunk:#2B2B2B;
+  --ink:#F7F2E8; --ink-2:#D9D2C5; --ink-3:#AFA89B;
+  --rule:#383838; --rule-2:#EDE7DA;
+  --accent:#92E6B4; --accent-soft:#1F3D2C; --on-accent:#0A3D23;
+  --outline:#EDE7DA; --hard:3px 3px 0 #000000; --hard-sm:2px 2px 0 #000000;
+  --bd-on:#FFD54A;
+  --deco-1:#3F3480; --deco-2:#7A3218;
+  --cta:#FF7A50; --on-cta:#151515;
+  --badge-a:#A1887F; --badge-b:#5D4037; --on-badge:#FFFFFF;
+  --pill-bg:#3E2C26; --pill-ink:#E8DCD7;
+  --st-cond:#E0B84A;
+  --err:#F2B8B5; --err-soft:#3A1E1C;
+  --fit-bg:#3A3149; --fit-ink:#DCD0F2;
+  --ex-jae:#139EC6; --ex-jie:#778A2D; --ex-dpp:#A8506F;
+}

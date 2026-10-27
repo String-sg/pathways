@@ -1,0 +1,113 @@
+/* tokens.css - THE DESIGN-TOKEN CONTRACT for the rebuilt Atlas (design/principles.md
+   Appendix A, adopted as written; the approved mockup uses the same values).
+   Every colour, size, space, radius, shadow, z-index and duration the view uses is a
+   custom property here, in light and dark pairs.  No hex outside this file; the DS
+   suite checks it.  Dark follows the system (prefers-color-scheme) unless the host
+   sets data-theme on the root, which wins either way. */
+:root{
+  color-scheme: light;
+  --ground:#F6F7F4; --surface:#FFFFFF; --plate:#FFFFFF; --surface-2:#FFFFFF; --sunk:#EEF0EA;
+  --ink:#171B16; --ink-2:#4A5147; --ink-3:#686F64;
+  --rule:#DDE1D8; --rule-2:#90968A;
+  --rosetta:#7A4B28; --on-rosetta:#FFFFFF;
+  --accent:#1E5B3E; --accent-soft:#E4EFE7; --on-accent:#FFFFFF; --focus:var(--accent);
+  --dot-rest:#838981;   /* a school outside the set: a hollow ring, 3.1:1 on --sunk */
+  --thumb:#FFFFFF;   /* a switch's pressed part (S4): one style for every pick-one switch, green kept for picks */
+  --h-chart:80px;
+  /* THIS SCHOOL / THESE - the picked set, in every chart: the accent, as a picked chip is (the design review,
+     2 Oct: pale blue meant the measure's ramp, "this school" and the whole level at once) */
+  --these:var(--accent);
+  --hover:rgb(23 27 22/.06); --press:rgb(23 27 22/.12);
+  /* a shade over a filled colour (the primary button) and a hover on the dark toast: the same in both themes */
+  --shade:rgb(0 0 0/.12); --shade-2:rgb(0 0 0/.24); --hover-on-ink:rgb(127 127 127/.25);
+  --ramp-more:#12395C; --ramp-less:#6A8EAE; --ramp-neg-more:#7A3500; --ramp-neg-less:#B0702F;   /* places left (his v2.16 answer 1): 7.8:1 and 3.5:1 on --sunk */ --bar-base:#838981; --dim:#868C81;
+  /* the level's bars behind a picked set, and the level's median line (a data-viz review, 3 Oct).  The grey is the
+     lightest that still clears 3:1 on the panel - a bar is a mark a reader must see (the [chart] check) - which puts
+     it 2.6:1 from the green, against 2.2:1 before */
+  --bar-ctx:#8F958C; --med-base:#5C6359;
+  --p1-other:#8F958C; --p1-other-ink:#171B16;   /* the other schools' share bar, with text on it at 4.5:1 */
+  --c1:#3B4E8C; --c2:#B1502D; --c3:#1F7A72; --c4:#8C6E27; --c5:#6B7280;   /* a count printed on a part (v3.5) needs 4.5:1 in --surface: 7.9 · 4.9 · 5.3 · 4.8 · 4.8 (--c4 was #9A7B2E, 4.0) */
+  /* THE MAP'S CONTEXT COLOURS (v3.7.0, his answers of 16 Oct): one fixed colour per value, read by the map, the list's group
+     headers, the part bar and the waffle alike, so a colour never drifts.  Checked with the dataviz validator, every pair
+     apart for protan and deutan readers.  Sand is the usual one in every context (co-ed, government, SEC only), so the
+     minority stands out; the pale fills rely on --dot-edge for contrast, and the list names every value */
+  --ctx-boys:#1F5FA8; --ctx-girls:#CC2F4F; --ctx-coed:#E2C97E;
+  --ctx-govt:#E2C97E; --ctx-aided:#56B4E9; --ctx-ind:#1B3A6B; --ctx-sis:#D55E00; --ctx-ss:#1F8A7A;
+  --ctx-north:#1B3A6B; --ctx-south:#D55E00; --ctx-east:#1F8A7A; --ctx-west:#B49BD6;
+  --ctx-sec:#E2C97E; --ctx-iponly:#1B3A6B; --ctx-dual:#56B4E9; --ctx-noposting:#D55E00;
+  --ctx-pri:#56B4E9; --ctx-seclv:#1B3A6B; --ctx-jc:#D55E00;
+  --nofig:#B9BDB6; --dot-edge:rgba(23,27,22,.6);
+  /* P1 intake by phase (his P1 pack, 4 Oct; a colour review): hue says who a phase is for - Phase 1 · 2A and 2B · 2C and
+     2C(S) - and every one clears 3:1 on --surface (7.9, 3.6, 4.9); places left is a hatch in --rule-2, never a fill */
+  --p1-ph1:#3B4E8C; --p1-phab:#C265B0; --p1-phc:#B45700; --p1-left:var(--rule-2);
+  --ramp-lo:var(--ramp-more); --ramp-hi:var(--ramp-less);   /* the names model.js COL reads */
+  --warn-soft:#FBF4E4; --warn-line:#C9A227;
+  --e1:0 1px 2px rgb(23 27 22/.06),0 6px 16px -8px rgb(23 27 22/.16);
+  --e2:0 2px 6px rgb(23 27 22/.08),0 12px 32px -8px rgb(23 27 22/.22);
+  --scrim:rgb(23 27 22/.32);
+  --z-map:0; --z-mapui:10; --z-panel:20; --z-popover:40; --z-tooltip:50; --z-modal:60; --z-toast:70;
+  --sans:system-ui,-apple-system,"Segoe UI","Helvetica Neue",Arial,sans-serif;
+  --fs-1:12px; --lh-1:16px; --fs-2:14px; --lh-2:20px; --fs-3:17px; --lh-3:24px;
+  /* FOUR SIZES (v3.0.1, his "we do not want too many different font types and font sizes"): 12 small print, 14 body,
+     17 headings, 24 the page's one title.  20 px is retired. */
+  --fs-5:24px; --lh-5:28px;
+  --fw-1:400; --fw-2:600;
+  --sp-1:4px; --sp-2:8px; --sp-3:12px; --sp-4:16px; --sp-5:24px; --sp-6:32px; --sp-7:48px;
+  --h-bar:48px; --h-bar0:48px; --h-ctl:32px; --hit-min:24px; --row:32px;
+  --w-list:300px; --w-label:128px; --w-reader:520px; --w-rowk:112px;
+  /* THE MAP IS THE GROUND (his 13 Oct note: "the map … helps to break out of this structured container"): the bar and
+     the panes are glass over it - the surface at ~82%, a blur, an edge - so the land runs on underneath */
+  --glass:color-mix(in srgb,var(--surface) 84%,transparent); --glass-bar:color-mix(in srgb,var(--surface) 78%,transparent);
+  --blur:blur(16px) saturate(1.2); --edge:color-mix(in srgb,var(--rule) 70%,transparent); --gut:var(--sp-3);
+  --r-xs:3px; --r-sm:6px; --r:10px; --r-pill:999px;
+  --dur-1:100ms; --dur-2:200ms; --dur-exit:150ms; --dur-flip:240ms;
+  --ease-enter:cubic-bezier(0,0,0,1); --ease-exit:cubic-bezier(.3,0,1,1);
+}
+@media (prefers-color-scheme: dark){ :root:not([data-theme="light"]){
+  color-scheme: dark;
+  --ground:#111412; --surface:#1A1E1B; --plate:#FFFFFF; --surface-2:#232824; --sunk:#2A312C;
+  --ink:#E6E9E3; --ink-2:#BEC4B9; --ink-3:#9CA398;
+  --rule:#2F3530; --rule-2:#6F776C;
+  --rosetta:#C48A5A; --on-rosetta:#111412;
+  --accent:#7CC69C; --accent-soft:#28513A; --on-accent:#0E1A13; --thumb:#39413B; --dot-rest:#747C71;
+  --hover:rgb(255 255 255/.06); --press:rgb(255 255 255/.12);
+  --ramp-more:#D3E3F1; --ramp-less:#5A7FA2; --ramp-neg-more:#F2C6A0; --ramp-neg-less:#B0702F; --bar-base:#6C7369; --dim:#6C7369; --bar-ctx:#6A7068; --med-base:#A3AA9F; --p1-other:#9CA398; --p1-other-ink:#111412;
+  --c1:#8FA3E0; --c2:#E58A66; --c3:#5CC2B7; --c4:#D4B263; --c5:#A2A8B4;
+  /* the dark theme's own context palette (B6): navy and lilac cannot be told apart from sky once lightened, so hues change
+     where lightness can no longer separate them; the usual one is a muted sand that steps back on dark land */
+  --ctx-boys:#56B4E9; --ctx-girls:#FF8A8A; --ctx-coed:#8F8159;
+  --ctx-govt:#8F8159; --ctx-aided:#56B4E9; --ctx-ind:#F0E442; --ctx-sis:#E69F00; --ctx-ss:#CC79A7;
+  --ctx-north:#56B4E9; --ctx-south:#E69F00; --ctx-east:#F0E442; --ctx-west:#CC79A7;
+  --ctx-sec:#8F8159; --ctx-iponly:#F0E442; --ctx-dual:#56B4E9; --ctx-noposting:#E69F00;
+  --ctx-pri:#56B4E9; --ctx-seclv:#F0E442; --ctx-jc:#E69F00;
+  --nofig:#A4AAA0; --dot-edge:rgba(232,236,228,.55);
+  --p1-ph1:#758BE7; --p1-phab:#A85895; --p1-phc:#E16C10; --p1-left:#6F776C;   /* 5.3, 3.6, 5.1, 3.6 on --surface */
+  --warn-soft:#2B2616; --warn-line:#E0B84A;
+  --e1:0 1px 2px rgb(0 0 0/.24),0 6px 16px -8px rgb(0 0 0/.32);
+  --e2:0 2px 6px rgb(0 0 0/.30),0 12px 32px -8px rgb(0 0 0/.44);
+  --scrim:rgb(0 0 0/.55);
+}}
+:root[data-theme="dark"]{
+  color-scheme: dark;
+  --ground:#111412; --surface:#1A1E1B; --plate:#FFFFFF; --surface-2:#232824; --sunk:#2A312C;
+  --ink:#E6E9E3; --ink-2:#BEC4B9; --ink-3:#9CA398;
+  --rule:#2F3530; --rule-2:#6F776C;
+  --rosetta:#C48A5A; --on-rosetta:#111412;
+  --accent:#7CC69C; --accent-soft:#28513A; --on-accent:#0E1A13; --thumb:#39413B; --dot-rest:#747C71;
+  --hover:rgb(255 255 255/.06); --press:rgb(255 255 255/.12);
+  --ramp-more:#D3E3F1; --ramp-less:#5A7FA2; --ramp-neg-more:#F2C6A0; --ramp-neg-less:#B0702F; --bar-base:#6C7369; --dim:#6C7369; --bar-ctx:#6A7068; --med-base:#A3AA9F; --p1-other:#9CA398; --p1-other-ink:#111412;
+  --c1:#8FA3E0; --c2:#E58A66; --c3:#5CC2B7; --c4:#D4B263; --c5:#A2A8B4;
+  /* the dark theme's own context palette (B6): navy and lilac cannot be told apart from sky once lightened, so hues change
+     where lightness can no longer separate them; the usual one is a muted sand that steps back on dark land */
+  --ctx-boys:#56B4E9; --ctx-girls:#FF8A8A; --ctx-coed:#8F8159;
+  --ctx-govt:#8F8159; --ctx-aided:#56B4E9; --ctx-ind:#F0E442; --ctx-sis:#E69F00; --ctx-ss:#CC79A7;
+  --ctx-north:#56B4E9; --ctx-south:#E69F00; --ctx-east:#F0E442; --ctx-west:#CC79A7;
+  --ctx-sec:#8F8159; --ctx-iponly:#F0E442; --ctx-dual:#56B4E9; --ctx-noposting:#E69F00;
+  --ctx-pri:#56B4E9; --ctx-seclv:#F0E442; --ctx-jc:#E69F00;
+  --nofig:#A4AAA0; --dot-edge:rgba(232,236,228,.55);
+  --p1-ph1:#758BE7; --p1-phab:#A85895; --p1-phc:#E16C10; --p1-left:#6F776C;   /* 5.3, 3.6, 5.1, 3.6 on --surface */
+  --warn-soft:#2B2616; --warn-line:#E0B84A;
+  --e1:0 1px 2px rgb(0 0 0/.24),0 6px 16px -8px rgb(0 0 0/.32);
+  --e2:0 2px 6px rgb(0 0 0/.30),0 12px 32px -8px rgb(0 0 0/.44);
+  --scrim:rgb(0 0 0/.55);
+}

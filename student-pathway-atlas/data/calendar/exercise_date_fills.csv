@@ -1,0 +1,21 @@
+exercise_id,phase_prefix,date_start,date_end,basis,note,source
+AI-ADM-2027,apply,2026-10-01,2026-11-01,confirmed,"LASALLE diplomas: apply by 1 Nov 2026, outcomes by 23 Dec 2026 (Diploma in Music: apply by 28 Feb 2027)",https://www.lasalle.edu.sg/admissions/diploma-admissions
+AI-ADM-2027,apply,2026-10-01,,confirmed,"NAFA diplomas: open from October each year; no closing date on the page",https://www.nafa.edu.sg/admissions/diploma-admissions
+AI-EAE-2027,apply (LASALLE),2026-05-01,2026-05-22,confirmed,closed,https://www.lasalle.edu.sg/admissions/diploma-admissions
+AI-EAE-2027,apply (NAFA),2026-06-15,2026-06-30,confirmed,"closed; offers 10-20 Aug 2026",https://www.nafa.edu.sg/eae/eae2027intake
+NFP-2027,apply,2026-12-18,2026-12-28,confirmed,"portfolio by 4 Jan 2027; admission test 6 Jan; dance audition 11 Jan",https://www.nafa.edu.sg/admissions/foundation-admissions
+JAE-2027,appeal outcome,2027-02-19,2027-02-19,confirmed,9am,https://www.moe.gov.sg/post-secondary/admissions/jae
+JAE-2027,acceptance / enrolment instructions (polytechnic),2027-02-02,2027-02-28,month_only,by end February,https://www.moe.gov.sg/post-secondary/admissions/jae
+JAE-2027,apply,2027-01-13,2027-01-20,inferred,"expected: 6 calendar days from O-Level results day (results 13-15 Jan 2027, tentative)",MOE JAE page rule + Jan 2026 cycle
+JAE-2027,request for assistance,2027-01-13,2027-01-20,inferred,expected: same window as JAE apply,MOE JAE page rule
+JIE-O-2027,apply,2027-01-13,2027-01-20,inferred,expected: 6 calendar days from O-Level results day,Jan 2026 cycle windows
+DPP-2027,apply (2nd window,2027-01-13,2027-01-20,inferred,expected: 6 calendar days from O-Level results day,ITE DPP schedule (2026 cycle)
+PFP-2027,apply,2027-01-13,2027-01-20,inferred,expected: 6 calendar days from O-Level results day,Jan 2026 cycle windows
+JIE-N-2027,apply,2026-12-17,2026-12-25,inferred,"expected: 5 calendar days from N-Level results day (results 17-21 Dec 2026, tentative)",ITE schedule PDFs (Dec 2025 cycle)
+JIE-E-2027,apply,2026-12-17,2026-12-25,inferred,expected: 5 calendar days from N-Level results day,ITE schedule PDFs (Dec 2025 cycle)
+DPP-2027,apply (1st window),2026-12-17,2026-12-25,inferred,expected: 5 calendar days from N-Level results day,ITE DPP schedule (2025 cycle)
+DSA-JC-2027,results release,2027-01-13,2027-01-15,inferred,by email on the afternoon of O-Level results day,MOE DSA-JC page
+DSA-JC-2027,report,2027-02-03,2027-02-03,inferred,next school day after JAE posting (2 Feb 2027 tentative),MOE DSA-JC page
+POLY-EAE-2027-O,confirmation,2027-01-13,2027-01-15,inferred,confirmed on release of O-Level results,MOE Poly EAE page
+ITE-EAE-2027,confirmation,2026-12-17,2026-12-21,inferred,N-Level students: on N-Level results day (O-Level students: 13-15 Jan 2027),ITE EAE schedule PDF (months only)
+SEC5-2027,apply,2027-01-04,2027-01-04,confirmed,Sec 5 classes start Term 1 (Mon 4 Jan 2027); apply through your school,MOE PFP page + MOE school terms 2027
