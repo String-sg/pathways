@@ -2,7 +2,7 @@
 
 Educators building tools to help students make sense of subject choices and post-secondary pathways in Singapore.
 
-This repository brings together vibe-coded prototypes: tools built with AI assistance, shaped by educators' experience of the questions students ask. We are starting with one prototype, expecting two more, and will then run a small benchmarking exercise and add shared scripted tests here.
+This repository brings together vibe-coded prototypes: tools built with AI assistance, shaped by educators' experience of the questions students ask. The collection now includes Pathways and Student Pathway Atlas. The first release prioritises Pathways for parents and young people planning subject choices; Atlas is greyed out as **Coming soon** in the shared entry while its original prototype remains in this repository. Shared benchmarking and Pathways journey tests are planned.
 
 The exercise is also about giving people credit. Each prototype should retain its creator's name, its origins, and the contributions it builds on.
 
@@ -15,7 +15,7 @@ The current prototype's in-app acknowledgements credit:
 - **Evan Liao** with the Secondary 2 adaptation, reverse planning, subject combination features, nursing progression guide, glossary, and interface.
 - **Mathew Lim** with the original Post-Secondary Pathway Explorer prototype, core evaluation model, grade mapping, and baseline admissions data.
 
-**Tiannuo** is a fellow educator contributing to this exercise. Details of individual submissions will be added as the remaining prototypes arrive.
+**Koo Tiannuo** created **Student Pathway Atlas**, the results and course-matching prototype in [`student-pathway-atlas/`](student-pathway-atlas/). Its original README, licence, offline artifact and tests remain identifiable.
 
 Please preserve these acknowledgements when adapting the work. As prototypes, tests, and improvements are added, record who contributed what, including ideas or earlier work that a prototype builds on.
 
@@ -24,13 +24,30 @@ Please preserve these acknowledgements when adapting the work. As prototypes, te
 | Item | Status |
 | --- | --- |
 | Pathway Explorer in [index.html](index.html) | Available |
-| Two more educator-built prototypes | Expected |
-| Mini benchmarking exercise | Planned, once the prototypes are collected |
-| Shared scripted tests | Planned; no test suite is included yet |
+| Student Pathway Atlas in [`student-pathway-atlas/`](student-pathway-atlas/) | Prototype retained; Coming soon in the shared entry |
+| Shared admissions-reference comparison | Planned after scope and independently reviewed cases are agreed |
+| Shared Pathways journey/rule tests | Planned; Atlas already includes its own engine, matcher and browser checks |
+| Pathways export/import and summary PDF | Specified for review; not implemented |
 
 The current explorer lets users select subjects, subject levels (G1, G2, or G3), and results to explore possible post-secondary pathways. It also includes destination-first planning, course comparisons, and a glossary. Its interface is labelled for the Singapore–Cambridge Secondary Education Certificate (SEC) 2028 framework.
 
 These are prototypes for exploration and discussion. Check current official admissions requirements before using an output to guide an actual subject or course decision.
+
+## Pathways-first planning
+
+Start with [user journeys](docs/pathways-journeys.md), the [prioritised UX backlog](docs/pathways-ux-backlog.md),
+and the [feature specification](specs/001-pathways-first/spec.md). The [implementation plan](specs/001-pathways-first/plan.md),
+[task list](specs/001-pathways-first/tasks.md) and [test/evidence matrix](specs/001-pathways-first/test-matrix.md)
+separate the delivered placeholder from proposed mobile, rule-review and export work.
+
+The intended saving flow uses local summary/plan export and plan import, without login
+or a database. Hosted GA4 is deferred to a separate measurement slice; no analytics is
+activated by this planning change. Preserve the telemetry-free Atlas offline artifact.
+
+Spec Kit is initialised with a proposed [project constitution](.specify/memory/constitution.md).
+Contributor workflows are in `.agents/skills/speckit-*`; tool-version provenance is in
+[research.md](specs/001-pathways-first/research.md). Review the spec → plan → tasks before
+implementing the remaining work. There is no Spec Kit requirement for people using the app.
 
 ## Try the current prototype
 
@@ -54,7 +71,7 @@ Keep the original prototype identifiable when making improvements. Use made-up s
 
 ## How we will compare them
 
-Once all three prototypes are here, we will agree on a small set of shared scenarios and run each tool through the same cases.
+Before comparing the prototypes, agree on their overlapping scope and a small set of independently reviewed scenarios. Run each tool through the same supported cases and document differences between simplified planning and detailed results calculation.
 
 The proposed comparison will look at:
 
@@ -71,5 +88,5 @@ The aim is to learn from each approach and recognise each educator's contributio
 
 After agreeing on the scenarios and checking their expected outcomes against official sources, we will turn repeatable checks into scripted tests in this same repository. These should cover pathway rules and key browser interactions, with instructions for running them and recorded results.
 
-No benchmark results or automated test coverage are claimed yet.
+No shared benchmark results or new Pathways automated coverage are claimed here. Atlas documents its own existing tests; this planning change does not independently rerun or certify them.
 
