@@ -1,0 +1,736 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="theme-color" content="#090d16">
+<title>For Secondary Schools • Sec 2 Pathway &amp; Subject Combi Explorer</title>
+<link rel="icon" type="image/png" href="logo.png">
+<link rel="apple-touch-icon" href="logo.png">
+<link rel="preload" href="background.png" as="image">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,600;12..96,800&family=Atkinson+Hyperlegible:wght@400;700&family=JetBrains+Mono:wght@600;800&display=swap">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&text=0123456789&display=swap">
+
+<link rel="stylesheet" href="css/main.css">
+<style>
+  body {
+    background-color: #090d16;
+    background-image: url('background.png');
+    background-position: center top;
+    background-size: cover;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+  }
+</style>
+</head>
+
+<body>
+<a class="skip-link" href="#subjects">Skip to subjects</a>
+
+<div class="wrap">
+  <header>
+    <div class="hdr-left">
+      <img class="school-icon" src="logo.png" alt="Secondary School Logo">
+      <div class="hdr-text-box">
+        <div class="school-badge-wrap">
+          <span class="school-badge">FOR SECONDARY SCHOOLS</span>
+          <span class="eyebrow">Sec 2 Subject Combi &amp; Post-Sec Pathways</span>
+        </div>
+        <h1>Pathway Explorer (SEC 2028)</h1>
+        <p class="subhead">Explore how your Sec 3 &amp; 4 subject bands (G1, G2, G3) open doors to Junior College, Polytechnic, ITE, and Arts Institutions under Full SBB. This is NOT an MOE webapp.</p>
+      </div>
+    </div>
+
+    <div class="hdr-right">
+      <div class="mode-toggle" role="tablist" aria-label="Mode Toggle: Results, Course, or Career Planning">
+        <button type="button" role="tab" class="mode-btn is-active" id="btnModeResults" aria-selected="true" data-mode="results">
+          <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><path d="M9 11l3 3L22 4"/><path d="M21 12v7a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h11"/></svg>
+          <span>Results</span>
+        </button>
+        <button type="button" role="tab" class="mode-btn" id="btnModeCourse" aria-selected="false" data-mode="course">
+          <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><circle cx="12" cy="12" r="10"/><circle cx="12" cy="12" r="3"/><line x1="12" y1="2" x2="12" y2="5"/><line x1="12" y1="19" x2="12" y2="22"/><line x1="2" y1="12" x2="5" y2="12"/><line x1="19" y1="12" x2="22" y2="12"/></svg>
+          <span>Course</span>
+        </button>
+        <button type="button" role="tab" class="mode-btn" id="btnModeCareer" aria-selected="false" data-mode="career">
+          <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><path d="M4.5 16.5c-1.5 1.26-2 5-2 5s3.74-.5 5-2c.71-.84.7-2.13-.09-2.91a2.18 2.18 0 0 0-2.91-.09z"/><path d="m12 15-3-3a22 22 0 0 1 2-3.95A12.88 12.88 0 0 1 22 2c0 2.72-.78 7.5-6 11a22.35 22.35 0 0 1-4 2z"/><path d="M9 12H4s.55-3.03 2-4c1.62-1.08 5 0 5 0"/><path d="M12 15v5s3.03-.55 4-2c1.08-1.62 0-5 0-5"/></svg>
+          <span>Career</span>
+        </button>
+      </div>
+      <div class="hdr-btns">
+        <button type="button" class="ov-open" id="ovOpen" aria-haspopup="dialog" aria-controls="ov">Overview Chart</button>
+        <button type="button" class="gl-open" id="glOpen" aria-haspopup="dialog" aria-controls="gl">
+          <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 19.5V5a2 2 0 0 1 2-2h13v15H6.5A2.5 2.5 0 0 0 4 20.5 2.5 2.5 0 0 0 6.5 23H19v-5"/><path d="M8 7h7M8 11h5"/></svg>
+          Glossary
+        </button>
+        <button type="button" class="gl-open" id="creditsOpen" aria-haspopup="dialog" aria-controls="creditsDlg" title="Credits &amp; Acknowledgements">
+          <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M22 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg>
+          Credits
+        </button>
+      </div>
+      <div class="legend" aria-label="Colour key">
+        <span class="pill p-ok"><i></i>Prerequisites met*</span>
+        <span class="pill p-amber"><i></i>Possible (with conditions)</span>
+        <span class="pill p-bad"><i></i>Not eligible</span>
+      </div>
+    </div>
+  </header>
+
+  <!-- Main Forward Planning View -->
+  <div id="mainView">
+  <!-- Quick Presets -->
+  <div class="presets-wrap">
+    <span class="presets-label">⚡ Try Sample Combinations:</span>
+    <button type="button" class="preset-btn" id="prePure">7 G3 (Double Science)</button>
+    <button type="button" class="preset-btn" id="preG3">6 G3 (Combined Science)</button>
+    <button type="button" class="preset-btn" id="preComp">6 G3 (with Computing)</button>
+    <button type="button" class="preset-btn" id="prePoly">4 G3 + 1 G2 (Poly Ready)</button>
+    <button type="button" class="preset-btn" id="preG2">5 G2 (PFP / N(A))</button>
+    <button type="button" class="preset-btn" id="preG1">4 G1 (ITE / N(T))</button>
+    <div class="preset-select-wrap">
+      <select class="preset-select" id="presetSelect" aria-label="Sample Combinations">
+        <option value="" disabled selected>⚡ Try Sample Combinations...</option>
+        <option value="prePure">7 G3 (Double Science)</option>
+        <option value="preG3">6 G3 (Combined Science)</option>
+        <option value="preComp">6 G3 (with Computing)</option>
+        <option value="prePoly">4 G3 + 1 G2 (Poly Ready)</option>
+        <option value="preG2">5 G2 (PFP / N(A))</option>
+        <option value="preG1">4 G1 (ITE / N(T))</option>
+      </select>
+    </div>
+  </div>
+
+  <!-- Mobile 3-Tab Navigator (Mobile Only) -->
+  <nav class="mob-tabs" id="mobTabs" role="tablist" aria-label="Navigation Tabs">
+    <button type="button" role="tab" class="mob-tab-btn is-active" id="mobTabSubj" aria-selected="true" aria-controls="subjects">
+      <span class="mob-tab-label">Subjects</span>
+    </button>
+    <button type="button" role="tab" class="mob-tab-btn mob-tab-ok" id="mobTabOk" aria-selected="false" aria-controls="results">
+      <span class="tab-indicator"></span>
+      <span class="mob-tab-label">Prereqs Met</span>
+      <span class="tab-count count-ok" id="mobOkN">0</span>
+    </button>
+    <button type="button" role="tab" class="mob-tab-btn mob-tab-bad" id="mobTabBad" aria-selected="false" aria-controls="results">
+      <span class="tab-indicator"></span>
+      <span class="mob-tab-label">Not Eligible</span>
+      <span class="tab-count count-bad" id="mobBadN">0</span>
+    </button>
+  </nav>
+
+  <div class="layout">
+    <!-- Subject Configuration Panel -->
+    <section class="panel" id="subjects" aria-labelledby="subj-h">
+      <div class="panel-h">
+        <div>
+          <h2 id="subj-h">Subjects &amp; Results</h2>
+          <p>Choose your subjects, their levels (G1/G2/G3), and pass/fail to see your pathways.</p>
+        </div>
+        <div class="panel-btns">
+          <label class="toggle-wrap" id="gradeModeWrap" title="Switch between simplified Pass/Fail and detailed grade scoring">
+            <input type="checkbox" id="toggleGradeMode" class="sr-only">
+            <span class="toggle-switch" aria-hidden="true"></span>
+            <span class="toggle-label">Detailed Grades</span>
+          </label>
+          <button type="button" class="reset" id="save" title="Save choices in your browser">Save</button>
+          <button type="button" class="reset" id="reset">Reset</button>
+        </div>
+      </div>
+
+      <div class="panel-b">
+        <div id="aggregateDashboard" class="aggregate-dashboard" hidden></div>
+        <div class="subs" id="rows"></div>
+
+        <div class="subject-footer">
+          <div class="counts" aria-label="Passes by level">
+            <div class="count"><b id="c3">0</b><span>passed at G3</span></div>
+            <div class="count"><b id="c2">0</b><span>passed at G2</span></div>
+            <div class="count"><b id="c1">0</b><span>passed at G1</span></div>
+          </div>
+          <div class="cca-wrap" id="ccaWrap">
+            <label for="ccaGradeSelect" class="cca-label">🏅 CCA Bonus:</label>
+            <select id="ccaGradeSelect" class="cca-select" aria-label="CCA Grade for Bonus Points">
+              <option value="none">Fair / None (0 pts)</option>
+              <option value="good">Good: B3–C6 (1 pt)</option>
+              <option value="excellent">Excellent: A1–A2 (2 pts)</option>
+            </select>
+          </div>
+          <div class="subject-notes">
+            <div class="em" id="em"></div>
+            <p class="hint">A G3 pass also automatically satisfies a G2 or G1 requirement.</p>
+          </div>
+        </div>
+
+        <button type="button" class="mob-view-btn" id="mobViewBtn">
+          <span>View Pathways (Prereqs Met)</span>
+          <span class="tab-count count-ok" id="mobBtnOkN">0</span>
+          <span>&rarr;</span>
+        </button>
+      </div>
+    </section>
+
+    <!-- Results Panel -->
+    <main class="panel results" id="results" aria-label="Pathway eligibility results">
+      <p class="sr-only" id="resultStatus" role="status" aria-live="polite"></p>
+
+      <div class="panel-h">
+        <div>
+          <h2>Post-Secondary Pathways</h2>
+          <p>Explore pathways matching your subject combination and grades.</p>
+        </div>
+      </div>
+
+      <div class="results-tab-bar">
+        <div class="results-tabs" role="tablist" aria-label="Pathway eligibility status">
+          <button type="button" role="tab" class="tab-btn tab-ok is-active" id="tabOk" aria-selected="true" aria-controls="paneOk">
+            <span class="tab-indicator"></span>
+            <span class="tab-label">Prerequisites Met (Can Apply)</span>
+            <span class="tab-count count-ok" id="okN">0</span>
+          </button>
+          <button type="button" role="tab" class="tab-btn tab-bad" id="tabBad" aria-selected="false" aria-controls="paneBad">
+            <span class="tab-indicator"></span>
+            <span class="tab-label">Not Eligible Yet</span>
+            <span class="tab-count count-bad" id="badN">0</span>
+          </button>
+        </div>
+      </div>
+
+      <div class="panel-b">
+        <div id="sec5StatusCard" class="sec5-card-wrap" hidden></div>
+        <div id="paneOk" role="tabpanel" aria-labelledby="tabOk" class="tab-pane is-active">
+          <div class="cards" id="okCards"></div>
+          <button type="button" class="mob-back-btn" id="mobBackBtnOk">&larr; Back to Subjects</button>
+        </div>
+
+        <div id="paneBad" role="tabpanel" aria-labelledby="tabBad" class="tab-pane" hidden>
+          <div class="cards" id="badCards"></div>
+          <button type="button" class="mob-back-btn" id="mobBackBtnBad">&larr; Back to Subjects</button>
+        </div>
+      </div>
+    </main>
+  </div>
+
+  <!-- Reference Section -->
+  <section class="ref" aria-label="Grade reference">
+    <div>
+      <h3>G3 to G2 Grade Conversion (Poly &amp; PFP)</h3>
+      <table>
+        <thead><tr><th>G3 Grade</th><th>A1 · A2 · B3</th><th>B4 · C5 · C6</th><th>D7</th><th>E8</th><th>9</th></tr></thead>
+        <tbody><tr><th>G2 Grade</th><td>1</td><td>2</td><td>3</td><td>4</td><td>Grade 5 (ITE only; not Poly/PFP)</td></tr></tbody>
+      </table>
+    </div>
+    <div>
+      <h3>What Counts as a Pass</h3>
+      <table>
+        <thead><tr><th>Level</th><th>Pass</th><th>Fail (Conversions)</th></tr></thead>
+        <tbody>
+          <tr><th>G3</th><td>A1 to C6 (50% &amp; above)</td><td>D7 (→ G2 Gr 3), E8 (→ G2 Gr 4), 9 (ITE only)</td></tr>
+          <tr><th>G2</th><td>Grade 1 to 5 (PFP requires Gr 1–4)</td><td>Grade 6 (ITE aggregate only)</td></tr>
+          <tr><th>G1</th><td>Grade A to D (Pass)</td><td>Grade E (ITE aggregate only)</td></tr>
+        </tbody>
+      </table>
+    </div>
+    <div>
+      <h3>Mother Tongue at G1: Pathway Rules</h3>
+      <table>
+        <thead><tr><th>Pathway</th><th>Subject MER Check</th><th>Counted in Aggregate?</th></tr></thead>
+        <tbody>
+          <tr><th>JC &amp; MI</th><td>✓ Grade A–D (takes MTL 'B')</td><td>✕ No (L1R4 requires all G3)</td></tr>
+          <tr><th>Poly Diploma</th><td>Not required for most</td><td>✕ No (ELR2B2 requires G3/G2)</td></tr>
+          <tr><th>PFP / ITE 2-Yr</th><td>Not required</td><td>✕ No (ELMAB3 requires G2)</td></tr>
+          <tr><th>ITE 3-Year</th><td>✓ Grade A–D meets MER</td><td>✓ Yes (A–E = 1–5 points)</td></tr>
+        </tbody>
+      </table>
+    </div>
+  </section>
+  </div>
+
+  <!-- Reverse Planning View (Replaces Main App in Reverse Mode) -->
+  <section class="rp-view" id="rpView" hidden aria-labelledby="rpTitle">
+    <div class="rp-view-card">
+      <div class="rp-view-top">
+        <div class="rp-header">
+          <span class="rp-tag">🎯 Goal-Oriented Pathway Planner</span>
+          <h2 id="rpTitle">Course <span>Planning</span></h2>
+          <p class="rp-subhead">Start from your dream destination. Tap any course bubble to inspect minimum SEC 2028 entry requirements, compare courses side-by-side, or load the minimum subject combination directly into Subjects &amp; Results.</p>
+        </div>
+        <button type="button" class="rp-exit-btn" id="rpExitBtn" title="Back to Results Planning">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><line x1="19" y1="12" x2="5" y2="12"/><polyline points="12 19 5 12 12 5"/></svg>
+          Back to Results
+        </button>
+      </div>
+
+      <!-- Quick Filters & Compare Trigger -->
+      <div class="rp-action-bar">
+        <div class="rp-filters" id="rpFilters" role="tablist" aria-label="Course Clusters">
+          <button type="button" class="rp-filter is-active" data-filter="all">All Pathways</button>
+          <button type="button" class="rp-filter" data-filter="jc">JC and MI</button>
+          <button type="button" class="rp-filter" data-filter="poly">Polytechnic</button>
+          <button type="button" class="rp-filter" data-filter="pfp">PFP</button>
+          <button type="button" class="rp-filter" data-filter="arts">Arts Institutions</button>
+          <button type="button" class="rp-filter" data-filter="ite">ITE Higher NITEC</button>
+        </div>
+        <div class="rp-bar-right">
+          <div class="rp-search-wrap">
+            <svg class="rp-search-icon" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
+            <input type="search" id="rpSearchInput" class="rp-search-input" placeholder="Search e.g. Sports, Nursing, AI, Business..." aria-label="Search courses, subjects, and fields">
+          </div>
+          <button type="button" class="rp-compare-btn" id="rpToggleCompare">
+            <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><path d="M16 3h5v5"/><path d="m21 3-7 7"/><path d="M8 21H3v-5"/><path d="m3 21 7-7"/></svg>
+            <span>Compare Table</span>
+            <span class="rp-compare-badge" id="rpCompareCount">0</span>
+          </button>
+        </div>
+      </div>
+
+      <!-- Compare Table Section -->
+      <div class="rp-compare-panel" id="rpComparePanel" hidden>
+        <div class="rp-compare-header">
+          <div class="rp-compare-title">
+            <h3>⚖️ Pathway &amp; Course Comparison Tool</h3>
+            <p>Compare admissions metrics, Full SBB minimum bands, and subject prerequisites side-by-side.</p>
+          </div>
+          <div class="rp-compare-actions">
+            <button type="button" class="rp-clear-btn" id="rpClearCompare">Clear All</button>
+            <button type="button" class="rp-close-compare-btn" id="rpCloseCompare">&times; Back to Bubbles</button>
+          </div>
+        </div>
+        <div class="rp-table-scroll" id="rpCompareTableWrap"></div>
+      </div>
+
+      <!-- Two-Column Split Layout: Courses on Left, Selected Course on Right -->
+      <div class="rp-split-layout">
+        <!-- Left: Course Selections Canvas -->
+        <div class="rp-split-left">
+          <div class="rp-bubbles-canvas" id="rpBubblesCanvas"></div>
+        </div>
+
+        <!-- Right: Sticky Selected Course Inspector & Empty Guide Card -->
+        <aside class="rp-split-right" id="rpSplitRight" aria-label="Course Requirements Details">
+          <!-- Course Requirements Inspector (Opens on Bubble Click) -->
+          <div class="rp-inspector" id="rpInspector" hidden>
+            <div class="rp-inspector-h">
+              <div class="rp-inspector-title">
+                <span class="rp-inspector-icon" id="rpInspectIcon">💻</span>
+                <div>
+                  <div class="rp-inspector-cat" id="rpInspectCat">Polytechnic Year 1</div>
+                  <h4 id="rpInspectName">Course Name</h4>
+                </div>
+              </div>
+              <button type="button" class="rp-inspector-close" id="rpInspectorClose" aria-label="Close details">&times;</button>
+            </div>
+
+            <div class="rp-req-grid" id="rpInspectGrid"></div>
+
+            <div class="rp-inspector-details">
+              <div class="rp-detail-sec">
+                <h5>Scope &amp; Career Clusters</h5>
+                <p id="rpInspectDesc"></p>
+              </div>
+              <div class="rp-detail-sec">
+                <h5>Exact Minimum Entry Requirements (MER &amp; Results)</h5>
+                <div id="rpInspectMinGrades" class="rp-min-grades"></div>
+              </div>
+              <div class="rp-detail-sec">
+                <h5>Institutions &amp; Progression Pathways</h5>
+                <p id="rpInspectCampuses"></p>
+              </div>
+              <div class="rp-detail-sec" id="rpInspectCurriculumSec" hidden>
+                <h5>Curricular Modules &amp; Supervised Clinical Postings</h5>
+                <div id="rpInspectCurriculum" class="rp-min-grades" style="border-left:3px solid var(--accent);background:rgba(0,0,0,0.35);"></div>
+              </div>
+              <div class="rp-detail-sec">
+                <h5>Minimum Sec 3/4 Subject Combination (SEC 2028)</h5>
+                <div class="rp-combi-pills" id="rpInspectCombi"></div>
+              </div>
+            </div>
+
+            <div class="rp-inspector-actions">
+              <button type="button" class="rp-action-compare" id="rpInspectCompareBtn">+ Add to Compare</button>
+              <button type="button" class="rp-action-load" id="rpInspectLoadBtn">
+                <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>
+                <span>Load into Subjects &amp; Results</span>
+              </button>
+            </div>
+          </div>
+
+          <!-- Empty State (Shown when no course is currently selected) -->
+          <div class="rp-inspector-empty" id="rpInspectorEmpty">
+            <div class="rp-empty-icon">👈</div>
+            <h3 class="rp-empty-title">Select a Course</h3>
+            <p class="rp-empty-desc">Click any course bubble on the left to inspect SEC 2028 minimum entry requirements, career clusters, progression ladders, and 1-click subject combination loading.</p>
+            <div class="rp-empty-hints">
+              <div class="rp-empty-hint">
+                <span class="rp-hint-badge">💡 Pro-Tip</span>
+                <span>Use <strong>Compare Table</strong> above to compare admission metrics side-by-side.</span>
+              </div>
+              <div class="rp-empty-hint">
+                <span class="rp-hint-badge">⚡ Quick Load</span>
+                <span>Selecting a course allows you to inject its exact required subjects directly into your Results planner.</span>
+              </div>
+            </div>
+          </div>
+        </aside>
+      </div>
+
+      <div class="rp-view-bottom">
+        <button type="button" class="rp-exit-btn rp-exit-btn-bottom" id="rpExitBtnBottom">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><line x1="19" y1="12" x2="5" y2="12"/><polyline points="12 19 5 12 12 5"/></svg>
+          Back to Results Planning
+        </button>
+      </div>
+    </div>
+  </section>
+
+  <!-- Career Planning View (Visual Mind Map of Ladders & Islands) -->
+  <section class="career-view" id="careerView" hidden aria-labelledby="careerTitle">
+    <div class="career-view-card">
+      <div class="career-view-top">
+        <div class="career-header">
+          <span class="career-tag">🚀 Visual Progression Mind Map</span>
+          <h2 id="careerTitle">Career <span>Ladders &amp; Islands</span></h2>
+          <p class="career-subhead">Explore career stages from Secondary 2 to university degrees and industry leadership. Visual islands light up when your current results meet prerequisites, or dim out if not yet eligible. See exact study durations, timeline milestones, and <strong>💰 paid Work-Study Diplomas</strong> where you earn a full salary while sponsored!</p>
+        </div>
+        <button type="button" class="rp-exit-btn" id="careerExitBtn" title="Back to Results Planning">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><line x1="19" y1="12" x2="5" y2="12"/><polyline points="12 19 5 12 12 5"/></svg>
+          Back to Results
+        </button>
+      </div>
+
+      <!-- Career Cluster Selector -->
+      <div class="career-cluster-bar">
+        <div class="career-clusters" id="careerClusters" role="tablist" aria-label="Career Ladders">
+          <button type="button" class="career-cluster-btn is-active" data-cluster="nursing">🩺 Nursing &amp; Healthcare</button>
+          <button type="button" class="career-cluster-btn" data-cluster="aerospace">✈️ Aerospace &amp; Aviation</button>
+          <button type="button" class="career-cluster-btn" data-cluster="robotics">⚡ Robotics &amp; Electrical</button>
+          <button type="button" class="career-cluster-btn" data-cluster="sports">🏃 Sports Science &amp; Fitness</button>
+          <button type="button" class="career-cluster-btn" data-cluster="computing">💻 Computing, AI &amp; Cyber</button>
+        </div>
+      </div>
+
+      <!-- Career Summary & Live Eligibility Indicator -->
+      <div class="career-summary-box" id="careerSummaryBox"></div>
+
+      <!-- Mind Map Canvas with Stages and Islands -->
+      <div class="career-map-canvas" id="careerMapCanvas"></div>
+
+      <div class="rp-view-bottom">
+        <button type="button" class="rp-exit-btn rp-exit-btn-bottom" id="careerExitBtnBottom">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><line x1="19" y1="12" x2="5" y2="12"/><polyline points="12 19 5 12 12 5"/></svg>
+          Back to Results Planning
+        </button>
+      </div>
+    </div>
+  </section>
+
+  <!-- Career Island Details Dialog -->
+  <dialog class="ov" id="islandDlg" aria-labelledby="islDlgTitle" style="max-width:760px;">
+    <div class="ov-inner">
+      <button type="button" class="ov-close" id="islandDlgClose" aria-label="Close">&times;</button>
+      <div style="display:flex;align-items:center;gap:12px;margin-bottom:6px;">
+        <span style="font-size:32px;" id="islDlgIcon">🩺</span>
+        <div>
+          <span class="eyebrow" id="islDlgStageBadge">Stage 1: Foundational Practice</span>
+          <h2 id="islDlgTitle" style="text-align:left;margin:4px 0 0;font-size:22px;">Island Title</h2>
+        </div>
+      </div>
+      <div style="font-size:12.5px;color:var(--muted);margin-bottom:14px;" id="islDlgInst">Institution</div>
+
+      <!-- Live Status Banner in Dialog -->
+      <div id="islDlgStatus" style="margin-bottom:14px;padding:10px 14px;border-radius:10px;font-size:12.5px;font-weight:700;"></div>
+
+      <div style="display:grid;grid-template-columns:repeat(auto-fit, minmax(180px, 1fr));gap:10px;margin-bottom:16px;">
+        <div style="background:rgba(0,0,0,0.3);border:1px solid var(--rule);border-radius:10px;padding:10px 12px;">
+          <div style="font-size:11px;font-weight:700;color:var(--muted);text-transform:uppercase;">Study Duration</div>
+          <div style="font-size:14px;font-weight:800;color:var(--accent);" id="islDlgDuration">3 Years</div>
+        </div>
+        <div style="background:rgba(0,0,0,0.3);border:1px solid var(--rule);border-radius:10px;padding:10px 12px;">
+          <div style="font-size:11px;font-weight:700;color:var(--muted);text-transform:uppercase;">Cumulative Years</div>
+          <div style="font-size:14px;font-weight:800;color:var(--gold);" id="islDlgCumulative">3 Years from Sec 4</div>
+        </div>
+        <div style="background:rgba(0,0,0,0.3);border:1px solid var(--rule);border-radius:10px;padding:10px 12px;">
+          <div style="font-size:11px;font-weight:700;color:var(--muted);text-transform:uppercase;">Qualification &amp; Role</div>
+          <div style="font-size:14px;font-weight:800;color:#34d399;" id="islDlgRole">Role</div>
+        </div>
+      </div>
+
+      <!-- Paid & Compensation Section -->
+      <div id="islDlgPaidSec" style="background:rgba(245,158,11,0.12);border:1px solid rgba(245,158,11,0.35);border-radius:10px;padding:12px 14px;margin-bottom:14px;">
+        <div style="font-size:12px;font-weight:800;color:var(--gold);text-transform:uppercase;margin-bottom:4px;">💰 Salary, Stipends &amp; Sponsorship</div>
+        <div style="font-size:12.5px;color:#fef08a;line-height:1.5;" id="islDlgCompensation"></div>
+      </div>
+
+      <!-- Curriculum & Attachments -->
+      <div style="margin-bottom:14px;">
+        <h3 style="font-size:13px;font-weight:800;color:#fff;text-transform:uppercase;letter-spacing:.05em;margin-bottom:6px;">📘 What You Will Learn &amp; Attachments</h3>
+        <p style="font-size:12.5px;color:#cbd5e1;line-height:1.5;margin:0 0 6px;" id="islDlgCurriculum"></p>
+      </div>
+
+      <!-- Full SBB Entry Criteria -->
+      <div style="background:rgba(255,255,255,0.03);border:1px solid var(--rule);border-radius:10px;padding:12px 14px;margin-bottom:16px;">
+        <div style="font-size:11.5px;font-weight:800;color:var(--accent);text-transform:uppercase;margin-bottom:4px;">🎯 SEC 2028 Minimum Entry Requirements (MER)</div>
+        <div style="font-size:12.5px;color:#e2e8f0;line-height:1.5;" id="islDlgMerText"></div>
+      </div>
+
+      <div style="display:flex;justify-content:flex-end;gap:10px;padding-top:12px;border-top:1px solid var(--rule);">
+        <button type="button" class="rp-action-load" id="islDlgLoadBtn">⚡ Load Required Subjects into Results</button>
+      </div>
+    </div>
+  </dialog>
+
+  <footer>
+    <p>Adapted for Secondary 2 students based on MOE's official SEC 2028 admissions framework. Eligibility shows whether general admission criteria are met. Specific courses also require course-specific prerequisites and cut-off points.</p>
+    <div class="footer-footnote">
+      <p>
+        <strong>* Footnote on Pass/Fail Simplification for Sec 2s:</strong> Results in this explorer are simplified to Pass/Fail so you can focus on how your subject levels (G1/G2/G3) unlock post-secondary doors without worrying about exact numerical points yet. In the actual SEC examination:
+        <br>&bull; <strong>Mother Tongue at G1:</strong> Grade A to D satisfies the subject prerequisite for Junior College and Millennia Institute (students offer MTL 'B' at pre-U). G1 MTL cannot be included in L1R4, ELR2B2, or PFP aggregates.
+        <br>&bull; <strong>PFP requires strong passes:</strong> Grade 1–3 for English &amp; Maths, and Grade 1–4 for other subjects (scraped Grade 5 passes do not qualify for PFP).
+        <br>&bull; <strong>Polytechnic B2 subject:</strong> Must be at least G2 Grade 4 or G3 A1–E8 (Grade 5/6 not accepted for B2 in ELR2B2).
+        <br>&bull; <strong>Prerequisites Met vs. Final Posting:</strong> Meeting prerequisites means you are eligible to apply; final posting is competitive and depends on meeting the course aggregate score cut-off (e.g. JC gross L1R4 &le; 16, Poly net ELR2B2 &le; 22, PFP gross ELMAB3 &le; 12, ITE gross ELMAB3 &le; 19).
+      </p>
+    </div>
+    <p>&copy; For Secondary Schools &bull; For Educational &amp; Form Class Planning</p>
+  </footer>
+</div>
+
+<!-- Nursing Progression Ladder Dialog -->
+<dialog class="ov" id="npDlg" aria-labelledby="npTitle">
+  <div class="ov-inner">
+    <button type="button" class="ov-close" id="npClose" aria-label="Close">&times;</button>
+    <h2 id="npTitle">🩺 Nursing Career Pathway: <span>Enrolled Nurse to Registered Nurse &amp; Degree</span></h2>
+    <p style="font-size:13px;color:#cbd5e1;text-align:center;margin:0 auto 16px;max-width:85ch;">
+      If a student qualifies for the <strong>3-Year Higher Nitec pathway</strong>, Singapore offers a structured, progressive career ladder from an <strong>Enrolled Nurse (EN)</strong> up to a <strong>Registered Nurse (RN)</strong> and a University Degree. No student is locked out of a nursing career!
+    </p>
+
+    <div class="np-steps">
+      <div class="np-step-box s1">
+        <div class="np-step-num">Stage 1 • Duration: 3 Years</div>
+        <h3 class="np-step-title">ITE 3-Year Higher Nitec in Nursing</h3>
+        <div class="np-step-body">
+          <p><strong>Campus:</strong> ITE College East (School of Health Sciences)</p>
+          <ul>
+            <li><strong>Year 1:</strong> Broad-based foundational healthcare and biological science modules.</li>
+            <li><strong>Years 2 &amp; 3:</strong> Core nursing specialization, high-tech simulation ward practice, and extensive hospital postings.</li>
+            <li><strong>Outcome:</strong> Graduate with Higher Nitec in Nursing; eligible to register with Singapore Nursing Board (SNB) to practise as a licensed <strong>Enrolled Nurse (EN)</strong>.</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="np-step-box s2">
+        <div class="np-step-num">Stage 2 • Duration: 2 to 3 Years</div>
+        <h3 class="np-step-title">Diploma in Nursing &rarr; Registered Nurse (RN)</h3>
+        <div class="np-step-body">
+          <p>Two distinct pathways to upgrade to a <strong>Registered Nurse (RN)</strong>:</p>
+          <ul>
+            <li><strong>Route A: Full-time Polytechnic Diploma</strong> at NYP or NP (2 to 3 years). With GPA &ge; 3.0, graduates qualify for advanced placement into an <em>accelerated 2-year or 2.5-year</em> route.</li>
+            <li><strong>Route B: ITE Work-Study Diploma (WSDip) in Nursing</strong> (3 years). Work as an Enrolled Nurse earning full salary while fully sponsored for part-time diploma training!</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="np-step-box s3">
+        <div class="np-step-num">Stage 3 • Duration: 2 to 3 Years</div>
+        <h3 class="np-step-title">University Degree in Nursing (Optional)</h3>
+        <div class="np-step-body">
+          <p><strong>Institutions:</strong> National University of Singapore (NUS) or Singapore Institute of Technology (SIT).</p>
+          <ul>
+            <li><strong>Programme:</strong> Bachelor of Science in Nursing.</li>
+            <li><strong>Duration:</strong> 2 to 3 years (diploma graduates receive credit exemptions).</li>
+            <li><strong>Outcome:</strong> Direct progression to Senior Staff Nurse, Nurse Clinician, Nurse Educator, or Advanced Practice Nurse (APN).</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <h3 style="font-size:14.5px;font-weight:800;color:var(--accent);margin:16px 0 6px;">📊 Total Years &amp; Career Milestone Summary</h3>
+    <div class="np-table-wrap">
+      <table class="np-table">
+        <thead>
+          <tr>
+            <th>Stage / Qualification</th>
+            <th>Duration</th>
+            <th>Cumulative Years</th>
+            <th>Career Milestone</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td><strong>ITE 3-Year Higher Nitec in Nursing</strong></td>
+            <td>3 years</td>
+            <td><b style="color:var(--gold)">3 years</b></td>
+            <td><span class="np-badge-role np-badge-en">Enrolled Nurse (EN)</span></td>
+          </tr>
+          <tr>
+            <td><strong>Polytechnic Diploma / ITE Work-Study Diploma</strong></td>
+            <td>2 – 3 years</td>
+            <td><b style="color:var(--accent-light)">5 – 6 years</b></td>
+            <td><span class="np-badge-role np-badge-rn">Registered Nurse (RN)</span></td>
+          </tr>
+          <tr>
+            <td><strong>Bachelor of Science in Nursing</strong> <em>(Optional)</em></td>
+            <td>2 – 3 years</td>
+            <td><b style="color:#d8b4fe">7 – 9 years</b></td>
+            <td><span class="np-badge-role np-badge-deg">Staff / Senior Nurse / APN</span></td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+
+    <div style="font-size:12px;color:var(--muted);background:rgba(255,255,255,0.03);border:1px solid var(--rule);border-radius:10px;padding:10px 14px;margin-top:10px;line-height:1.5;">
+      💡 <strong>Did You Know?</strong> Public healthcare clusters (SingHealth, National Healthcare Group, and NUHS) offer full sponsorship packages and monthly training allowances. For Enrolled Nurses, the ITE Work-Study Diploma lets you earn full pay while the hospital pays for your diploma!
+    </div>
+
+    <div class="np-actions" style="display:flex;flex-wrap:wrap;gap:8px;margin-top:16px;padding-top:14px;border-top:1px solid var(--rule);justify-content:flex-end;">
+      <button type="button" class="np-action-btn" id="npLoadIteBtn" style="background:rgba(245,158,11,0.2);border:1px solid var(--gold);color:#fef08a;font-family:var(--f-display);font-size:12px;font-weight:700;padding:7px 12px;border-radius:8px;cursor:pointer;">⚡ Load ITE Nursing Combi (G1)</button>
+      <button type="button" class="np-action-btn" id="npLoadPolyBtn" style="background:rgba(56,189,248,0.2);border:1px solid var(--accent);color:#7dd3fc;font-family:var(--f-display);font-size:12px;font-weight:700;padding:7px 12px;border-radius:8px;cursor:pointer;">⚡ Load Poly Nursing Combi (G3)</button>
+      <button type="button" class="np-action-btn" id="npInspectIteBtn" style="background:rgba(255,255,255,0.08);border:1px solid var(--rule);color:var(--ink);font-family:var(--f-display);font-size:12px;font-weight:700;padding:7px 12px;border-radius:8px;cursor:pointer;">🔍 Inspect ITE Nursing Details</button>
+      <button type="button" class="np-action-btn" id="npInspectPolyBtn" style="background:rgba(255,255,255,0.08);border:1px solid var(--rule);color:var(--ink);font-family:var(--f-display);font-size:12px;font-weight:700;padding:7px 12px;border-radius:8px;cursor:pointer;">🔍 Inspect Poly Nursing Details</button>
+    </div>
+  </div>
+</dialog>
+
+<!-- Overview Dialog -->
+<dialog class="ov" id="ov" aria-labelledby="ovTitle">
+  <div class="ov-inner">
+    <button type="button" class="ov-close" id="ovClose" aria-label="Close">&times;</button>
+    <h2 id="ovTitle">Overview of <span>Post-Secondary Admissions</span></h2>
+    <div style="overflow-x:auto">
+      <table class="ovt">
+        <thead>
+          <tr class="band"><th class="corner"></th><th colspan="8">POST-SECONDARY PATHWAYS</th></tr>
+          <tr>
+            <th class="corner">Taking at least</th>
+            <th>3-Yr Higher Nitec</th><th>2-Yr Higher Nitec</th><th>NAFA (NFP)</th>
+            <th>Arts Inst.</th><th>Poly (PFP)</th><th>Poly Year 1</th>
+            <th>Millennia Inst.</th><th>Junior College</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr><th scope="row">5 G3 subjects</th><td class="y"><span class="ck">✓</span></td><td class="y"><span class="ck">✓</span></td><td class="n"><span class="ck">✓</span></td><td class="y"><span class="ck">✓</span></td><td class="n"><span class="ck">✓</span></td><td class="y"><span class="ck">✓</span></td><td class="y"><span class="ck">✓</span></td><td class="n"><span class="ck">✓</span></td></tr>
+          <tr><th scope="row">4 G3 + 1 G2</th><td class="y"><span class="ck">✓</span></td><td class="y"><span class="ck">✓</span></td><td class="n"><span class="ck">✓</span></td><td class="n"><span class="ck">✓</span></td><td class="n"><span class="ck">✓</span></td><td class="n"><span class="ck">✓</span></td><td></td><td></td></tr>
+          <tr><th scope="row">5 G2 subjects</th><td class="y"><span class="ck">✓</span></td><td class="y"><span class="ck">✓</span></td><td class="y"><span class="ck">✓</span></td><td></td><td class="y"><span class="ck">✓</span></td><td></td><td></td><td></td></tr>
+          <tr><th scope="row">4 G1 subjects</th><td class="y"><span class="ck">✓</span></td><td class="s"><span class="ck">✓*</span></td><td></td><td></td><td></td><td></td><td></td><td></td></tr>
+        </tbody>
+      </table>
+    </div>
+    <p style="font-size:12px;color:var(--muted);margin-top:10px;">*Students offering 4 G1 subjects enter Year 1 of 3-Year Higher Nitec and can qualify for an accelerated 2-year route based on Year 1 Sem 1 exam results.</p>
+    <div style="font-size:12px;color:var(--muted);margin-top:12px;display:flex;flex-direction:column;gap:6px;">
+      <div>Reference: <a href="https://www.moe.gov.sg/media/images/microsite/58d2802f-a689-457c-ad6f-3219e7a82664.jpg" target="_blank" rel="noopener" style="color:var(--accent)">MOE Post-Secondary Admissions Overview Reference</a></div>
+      <div>For more information: <a href="https://www.moe.gov.sg/psle-fsbb/resources/full-subject-based-banding" target="_blank" rel="noopener" style="color:var(--accent)">MOE Full Subject-Based Banding Resources</a></div>
+    </div>
+  </div>
+</dialog>
+
+<!-- Glossary Dialog -->
+<dialog class="ov gl" id="gl" aria-labelledby="glTitle">
+  <div class="ov-inner">
+    <button type="button" class="ov-close" id="glClose" aria-label="Close">&times;</button>
+    <h2 id="glTitle">Glossary of Terms</h2>
+    <div class="gloss">
+      <dl>
+        <div><dt>SEC</dt><dd>Singapore-Cambridge Secondary Education Certificate (taken at the end of Secondary 4 from 2027/2028).</dd></div>
+        <div><dt>G1, G2, G3</dt><dd>General 1, 2, and 3 under Full SBB. G3 is the most demanding (Express standard).</dd></div>
+        <div><dt>G1 Mother Tongue</dt><dd>Grade A to D satisfies the subject entry requirement for JC and MI (students will offer MTL 'B'). It cannot be computed into L1R4, ELR2B2, or PFP ELMAB3, but counts 1–4 points for ITE 3-Year Higher Nitec.</dd></div>
+        <div><dt>MTL 'B'</dt><dd>A pre-university Mother Tongue syllabus at JC and MI with greater emphasis on practical listening and spoken skills, offered to students who took G1 Mother Tongue in secondary school.</dd></div>
+        <div><dt>L1R4</dt><dd>First Language + 4 Relevant subjects (all at G3). Used for Junior College and Millennia Institute.</dd></div>
+        <div><dt>ELR2B2</dt><dd>English + 2 Relevant + Best 2 other subjects. Used for Polytechnic Year 1 diplomas (ELR2B2-A/B/C/D).</dd></div>
+        <div><dt>ELMAB3</dt><dd>English + Mathematics + Best 3 other subjects. Used for PFP (≤12) and 2-Year Higher Nitec (≤19).</dd></div>
+        <div><dt>PFP</dt><dd>Polytechnic Foundation Programme: a 1-year foundation leading directly to a poly diploma without a 5th year in secondary school.</dd></div>
+        <div><dt>Gross vs Net</dt><dd>JC (≤16) and PFP (≤12) require gross scores before CCA deduction. Poly Year 1 (≤22) is net after deducting up to 2 CCA bonus points.</dd></div>
+        <div><dt>Higher Nitec</dt><dd>ITE certificate leading to employment or poly progression. 2-Year uses ELMAB3; 3-Year uses R2B2, R1B3, or B4.</dd></div>
+        <div><dt>HMTL</dt><dd>Higher Mother Tongue Language (G3). Passing both G3 English and HMTL awards 2 bonus points for JC admission (capped at 3 total bonus points).</dd></div>
+        <div><dt>Science at our school</dt><dd>Our school offers Double Science (split into 2: Chemistry, Physics, Biology) and Combined Science. Triple Science is not offered.</dd></div>
+        <div><dt>Computing &amp; Business</dt><dd>Our school offers Computing across G1, G2, and G3 levels. Computing directly qualifies as a relevant subject for Polytechnic Information &amp; Digital Technologies diplomas (ELR2B2-C), ITE Infocomm courses (R1B3-B), and counts towards JC/MI L1R4. Business (EBS) is offered at G1 level.</dd></div>
+        <div><dt>CourseFinder</dt><dd>Official MOE directory (<a href="https://www.moe.gov.sg/coursefinder" target="_blank" rel="noopener" style="color:var(--accent)">moe.gov.sg/coursefinder</a>) where students can check entry requirements for specific diploma &amp; Higher Nitec courses including Computing.</dd></div>
+        <div><dt>Enrolled Nurse (EN)</dt><dd>A licensed healthcare professional registered with the Singapore Nursing Board (SNB) via the ITE 3-Year Higher Nitec in Nursing (College East). ENs deliver vital patient care and can upgrade to Registered Nurse via Polytechnic Diploma or ITE Work-Study Diploma.</dd></div>
+        <div><dt>Registered Nurse (RN)</dt><dd>A professional nurse registered with SNB after completing a Polytechnic Diploma in Nursing, ITE Work-Study Diploma, or University Degree. RNs develop patient care plans, administer complex medications, and supervise nursing teams.</dd></div>
+        <div><dt>Work-Study Diploma (Nursing)</dt><dd>A 3-year fully sponsored upgrading diploma by ITE in partnership with public healthcare clusters. Enrolled Nurses work full-time earning a regular monthly salary while completing part-time diploma training to upgrade to Registered Nurses.</dd></div>
+      </dl>
+    </div>
+  </div>
+</dialog>
+
+<!-- Credits & Acknowledgements Dialog -->
+<dialog class="ov" id="creditsDlg" aria-labelledby="creditsTitle" style="max-width:820px;">
+  <div class="ov-inner">
+    <button type="button" class="ov-close" id="creditsClose" aria-label="Close">&times;</button>
+    <span class="eyebrow" style="margin-bottom:8px;">Project Attribution</span>
+    <h2 id="creditsTitle" style="text-align:left;margin-bottom:8px;">Credits &amp; <span>Acknowledgements</span></h2>
+    <p style="font-size:13px;color:var(--muted);margin:0 0 16px;">This educational planning tool builds upon foundational Full SBB post-secondary evaluation models, significantly expanded for Secondary 2 streaming and goal-oriented pathway planning.</p>
+
+    <div style="display:grid;gap:14px;">
+      <!-- Evan Liao -->
+      <div style="background:rgba(255,255,255,0.03);border:1px solid var(--rule);border-left:4px solid var(--accent);border-radius:12px;padding:14px 16px;">
+        <div style="display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:6px;margin-bottom:8px;">
+          <h3 style="font-size:16px;font-weight:800;color:#fff;">Evan Liao</h3>
+          <span style="font-family:var(--f-mono);font-size:11px;font-weight:700;padding:2px 8px;border-radius:999px;background:rgba(56,189,248,0.18);color:var(--accent-light);border:1px solid rgba(56,189,248,0.35);">Sec 2 Adaptation, Feature Engineering &amp; UI</span>
+        </div>
+        <ul style="margin:0;padding-left:18px;font-size:12.5px;color:#cbd5e1;line-height:1.55;">
+          <li><strong>Reverse Planning Engine:</strong> Designed the destination-first explorer with course cluster bubbles, search filters, course requirements inspector, side-by-side comparison table, and 1-click subject combination injector.</li>
+          <li><strong>Sec 2 Subject Combi System:</strong> Engineered dynamic elective selectors, Core Science split logic (Combined vs Pure Double Science with limit validation), and multi-band Computing (G1–G3) based on own school needs.</li>
+          <li><strong>Healthcare &amp; Nursing Ladder:</strong> Created the structured career progression module mapping Enrolled Nurse (ITE) to Registered Nurse (Poly / Work-Study Diploma) and University degrees.</li>
+          <li><strong>Interactive In-Text Glossary:</strong> Developed the live text-annotation engine and hover/touch definition tooltip system.</li>
+          <li><strong>UI &amp; Mobile Responsive Overhaul:</strong> Built the dark glassmorphic interface, sample combination presets, and the mobile 3-tab navigator.</li>
+        </ul>
+      </div>
+
+      <!-- Mathew Lim -->
+      <div style="background:rgba(255,255,255,0.03);border:1px solid var(--rule);border-left:4px solid var(--ok);border-radius:12px;padding:14px 16px;">
+        <div style="display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:6px;margin-bottom:8px;">
+          <h3 style="font-size:16px;font-weight:800;color:#fff;">Mathew Lim</h3>
+          <span style="font-family:var(--f-mono);font-size:11px;font-weight:700;padding:2px 8px;border-radius:999px;background:rgba(16,185,129,0.18);color:#6ee7b7;border:1px solid rgba(16,185,129,0.35);">Original Prototype &amp; Core Evaluation Architecture</span>
+        </div>
+        <ul style="margin:0;padding-left:18px;font-size:12.5px;color:#cbd5e1;line-height:1.55;">
+          <li><strong>Core Algorithmic Model:</strong> Conceived the initial Post-Secondary Pathway Explorer prototype evaluating Full SBB G1/G2/G3 passes against post-secondary pathways.</li>
+          <li><strong>Grade Mapping Architecture:</strong> Established the foundational conversion logic mapping G3 fail grades (D7/E8) to G2 pass equivalents.</li>
+          <li><strong>Admissions Data Baseline:</strong> Formulated the baseline eligibility data structures for JC, MI, Poly Year 1, PFP, and Higher Nitec.</li>
+        </ul>
+      </div>
+
+      <!-- Official Data Sources -->
+      <div style="background:rgba(255,255,255,0.02);border:1px solid var(--rule);border-radius:12px;padding:12px 14px;font-size:12px;color:var(--muted);line-height:1.5;">
+        <strong style="color:#e2e8f0;">Institutional Frameworks:</strong> Admission requirements and aggregate scoring criteria (L1R4, ELR2B2, ELMAB3, R1B3) are based on official guidelines from the <strong>Ministry of Education (MOE)</strong>, <strong>SEAB</strong>, <strong>Singapore Nursing Board (SNB)</strong>, and respective post-secondary institutions.
+      </div>
+    </div>
+  </div>
+</dialog>
+
+<div class="toast-notice" id="toastNotice" role="alert" aria-live="polite"></div>
+
+<a class="jump" id="jump" href="#results"><span class="j-ok"><b id="jOk">0</b> prereqs met</span> &bull; <span class="j-bad"><b id="jBad">0</b> not eligible</span> &bull; View Results &darr;</a>
+
+<script>
+  // Sync inspector display state & maintain scroll position for split view
+  document.addEventListener('DOMContentLoaded', () => {
+    const inspector = document.getElementById('rpInspector');
+    const empty = document.getElementById('rpInspectorEmpty');
+    const rightCol = document.getElementById('rpSplitRight');
+    if (!inspector || !empty) return;
+    let lastCourse = '';
+    const sync = () => {
+      const isHidden = inspector.hidden || inspector.style.display === 'none' || inspector.classList.contains('hidden');
+      if (window.innerWidth <= 860) {
+        empty.style.display = 'none';
+      } else {
+        empty.style.display = isHidden ? 'flex' : 'none';
+      }
+      if (!isHidden) {
+        const name = document.getElementById('rpInspectName')?.textContent || '';
+        if (name && name !== lastCourse) {
+          lastCourse = name;
+          if (rightCol) rightCol.scrollTop = 0;
+          if (window.innerWidth <= 860) {
+            inspector.scrollIntoView({ behavior: 'smooth', block: 'start' });
+          }
+        }
+      }
+    };
+    const obs = new MutationObserver(sync);
+    obs.observe(inspector, { attributes: true, attributeFilter: ['hidden', 'style', 'class'] });
+    window.addEventListener('resize', sync);
+    sync();
+  });
+</script>
+<script type="module" src="src/main.js"></script>
+</body>
+</html>
